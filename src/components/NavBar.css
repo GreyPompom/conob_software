@@ -1,0 +1,21 @@
+
+/*Navbar css*/
+@media (min-width: 992px) {
+    .navbar {
+      padding: 0 5.2vw;
+    }
+}
+
+.logo-navbar{
+    height: 40px;
+    width: 80px;
+  }
+
+  .custom-active {
+    color: inherit; /* Mantém a cor padrão */
+  }
+  
+  .custom-active.active,
+  .custom-active[aria-current="page"] {
+    color: var(--cor-primaria) !important; /* Cor azul para o link ativo */
+  }
