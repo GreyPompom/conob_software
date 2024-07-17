@@ -47,7 +47,6 @@
     "npm-force-resolutions": "^0.0.10"
   },
   "overrides": {
-    "nth-check": "$nth-check",
     "postcss":"^8.4.38"
   }
 }
