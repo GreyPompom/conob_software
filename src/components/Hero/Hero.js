@@ -2,6 +2,10 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import manHero from '../../assets/Hero/hero_img_15_1.png';
+import pontinhos from '../../assets/abstratos/pontilhados.png';
+import circulo from '../../assets/abstratos/circulo-azul.png';
+import manchaazul from '../../assets/abstratos/mancha-azul-abstrata.png';
+import triangulo from '../../assets/abstratos/triangulos-branco-azul-pequenos.png';
 import './Hero.css';
 
 function Hero() {
@@ -18,26 +22,34 @@ function Hero() {
                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="transparent" /></svg>
                     <div class="container">
                         <div class="carousel-caption text-start">
-                            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                                <div class="col-10 col-sm-8 col-lg-6">
-                                    <img src={manHero} class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="300" height="500" loading="lazy"></img>
+                            <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
+                                <div class="position-fixed top-0 end-0 p-3">
+                                    <img src={circulo} class="position-absolute circulo" alt="circulo azul" width="300" height="300" loading="lazy"></img>
                                 </div>
-                                <div className="col-lg-6">
-                                    <h1 className="display-5 fw-bold text-secondary-bg lh-1 mb-3" fill='var(--bs-tertiary-bg)'>Planos comerciais flexíveis para <span className='text-blue'>impulsionar o seu negócio</span> </h1>
-                                    <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                                        <a className="btn btn-primary rounded-pill ms-2" href="#" role="button">
+                                <div class="position-fixed end-0 p-3 ">
+                                    <img src={manchaazul} class="position-absolute mancha" alt="mancha azul" width="320" height="320" loading="lazy"></img>
+                                </div>
+                                <div class="position-fixed end-0 p-3 ">
+                                    <img src={triangulo} class="position-absolute triangulo spin" alt="triangulos 1 azul e 1 branco" width="50" height="50" loading="lazy"></img>
+                                </div>
+                                <div class="position-fixed end-0 p-3 ">
+                                    <img src={triangulo} class="position-absolute triangulo-2 spin" alt="triangulos 1 azul e 1 branco" width="50" height="50" loading="lazy"></img>
+                                </div>
+                                <div class="col-10 col-sm-8 col-lg-6 mx-sm-auto">
+                                    <img src={pontinhos} class="pontinhos d-block position-absolute" alt="Bootstrap Themes" width="300" height="500" loading="lazy"></img>
+                                    <img src={manHero} class="manHero d-block mx-lg-auto img-fluid ml-lg-8 movingX" alt="Bootstrap Themes" width="250" height="500" loading="lazy"></img>
+
+                                </div>
+                                <div className="col-lg-6 z-index-2">
+                                    <h1 className="title-hero fw-bold text-secondary-bg lh-1 mb-3 " fill='var(--bs-tertiary-bg)'>Planos comerciais flexíveis para <span className='text-blue'>impulsionar o seu negócio</span> </h1>
+                                    <div className="botao-contact d-grid gap-2 d-md-flex justify-content-md-start ">
+                                        <a className="btn btn-primary rounded-pill mt-md-5" href="#" role="button">
                                             Entre em contato <i className="bi bi-arrow-right-short"></i>
                                         </a>
                                     </div>
                                 </div>
+
                             </div>
-
-                            {/* <div className="">
-                  <h1>Planos comerciais flexíveis para <span className='text-blue'>impulsionar o seu negócio</span> </h1>
-                  <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p> 
-                </div>*/}
-
                         </div>
                     </div>
                 </div>

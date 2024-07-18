@@ -3,7 +3,12 @@
 @media (min-width: 992px) {
     .navbar {
       padding: 0 5.2vw;
+      height: 9vh;
     }
+}
+
+@media (min-width: 1600px) {
+  
 }
 
 .logo-navbar{

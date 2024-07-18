@@ -1,67 +1,72 @@
+/* Core Styles */
 .text-secondary-bg {
     color: var(--bs-secondary-color);
 }
 
-/* Carousel base class */
 .carousel {
     margin-bottom: 4rem;
+    height: 80vh;
     background: rgb(68, 156, 248);
-    background: radial-gradient(circle, rgba(68, 156, 248, 0.4817518248175182) 0%, rgba(50, 152, 245, 0.2019464720194647) 36%, rgba(33, 148, 243, 0.048661800486618056) 100%);
+    background: radial-gradient(circle, rgba(68, 156, 248, 0.32396708683473385) 0%, rgba(50, 152, 245, 0.1026785714285714) 36%, rgba(33, 148, 243, 0.048661800486618056) 100%);
 }
 
-
-/* Since positioning the image, we need to help out the caption */
 .carousel-caption {
     bottom: 3rem;
     z-index: 10;
-
 }
 
-/* Declare heights because of positioning of img element */
 .carousel-item {
     height: 32rem;
 }
 
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
+.pontinhos {
+    z-index: 1;
+    top: 45%;
+    width: 215px;
+    height: 180px;
+    right: 23%;
 }
 
-/* rtl:begin:ignore */
-.marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
+.manHero {
+    position: relative;
+    z-index: 2;
 }
 
-/* rtl:end:ignore */
-
-
-/* Featurettes
-  ------------------------- */
-
-.featurette-divider {
-    margin: 5rem 0;
-    /* Space out the Bootstrap <hr> more */
+.position-relative {
+    position: relative;
 }
 
-/* Thin out the marketing headings */
-/* rtl:begin:remove */
-.featurette-heading {
-    letter-spacing: -.05rem;
+.circulo {
+    right: -70px;
+    top: -45px;
 }
+.mancha{
+    left: -90px;
+    top: -134%;
+    width: 350px;
+    height: 350px;
+    z-index: 2;
+}
+.triangulo{
+    left: 41%;
+    top: 143px;
+}
+.triangulo-2{
+    left: 20%;
+    top: -150px;
+}
+.z-index-2{
+    z-index: 2;
+}
+/* Media Queries */
 
-/* rtl:end:remove */
-
-/* RESPONSIVE CSS
-  -------------------------------------------------- */
-
+/* Small Devices (>= 40em, approximately 640px) */
 @media (min-width: 40em) {
-
-    /* Bump up size of carousel content */
     .carousel-caption {
-        margin-top: 5rem;
+        top: 0;
+        margin-top: 3rem;
     }
+    
 
     .carousel-caption p {
         margin-bottom: 1.25rem;
@@ -74,42 +79,133 @@
     }
 }
 
+/* Medium Devices (>= 62em, approximately 992px) */
 @media (min-width: 62em) {
     .featurette-heading {
         margin-top: 7rem;
     }
 }
 
-@media (min-width: 40em) {
-
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-        margin-bottom: 1.25rem;
-        font-size: 1.25rem;
-        line-height: 1.4;
-    }
-
-    .featurette-heading {
-        font-size: 50px;
-    }
-}
-
-@media (min-width: 62em) {
-    .featurette-heading {
-        margin-top: 7rem;
-    }
-}
-@media (max-width: 992px) {
-
-    .carousel-item {
-        height: 47rem;
-    }
-}
+/* Large Devices and Up (>= 992px) */
 @media (min-width: 992px) {
     .carousel-caption {
         padding: 0 5.2vw;
         right: 0;
         left: 0;
     }
-    
+}
+
+/* Responsive Typography */
+@media (max-width: 2000px) {
+    .title-hero {
+        font-size: 3.5rem;
+    }
+    .manHero{
+        width: 350px;
+    }
+    .pontinhos{
+        right: 26%;
+        top: 65%;   
+    }
+}
+
+@media (max-width: 1600px) {
+    .title-hero {
+        font-size: 2.5rem;
+    }
+    .manHero{
+        width: 300px;
+    }
+    .pontinhos {
+        top: 55%;
+        right: 24%;
+    }
+    .circulo {
+        right: -150px;
+        top: -45px;
+    }
+
+}
+
+/* Smaller Devices Adjustments */
+
+/* Tablets (<= 992px) */
+@media (max-width: 992px) {
+    .circulo,.mancha{
+        display: none;
+    }
+    .carousel-item {
+        height: 40rem;
+    }
+
+    .pontinhos {
+        top: 28%;
+        right: 57%;
+    }
+    .title-hero {
+        font-size: 2rem;
+    }
+    .manHero {
+        width: 200px;
+    }
+}
+
+/* Landscape Phones (<= 768px) */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 43rem;
+    }
+
+    .pontinhos {
+        display: none !important;
+
+   
+    }
+}
+
+/* Portrait Phones (<= 576px) */
+@media (max-width: 576px) {
+
+}
+
+/* Extra Small Devices (<= 350px) */
+@media (max-width: 350px) {
+    .pontinhos {
+        top: 25%;
+        right: 55%;
+        left: 5%;
+        width: 165px;
+        height: 155px;
+    }
+}
+.movingX {
+    animation: movingX 8s linear infinite;
+}
+
+@keyframes movingX {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.spin {
+    animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
