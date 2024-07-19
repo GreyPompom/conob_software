@@ -5,7 +5,7 @@
 
 .carousel {
     margin-bottom: 4rem;
-    height: 80vh;
+    min-height: 90vh;
     background: rgb(68, 156, 248);
     background: radial-gradient(circle, rgba(68, 156, 248, 0.32396708683473385) 0%, rgba(50, 152, 245, 0.1026785714285714) 36%, rgba(33, 148, 243, 0.048661800486618056) 100%);
 }
@@ -16,7 +16,7 @@
 }
 
 .carousel-item {
-    height: 32rem;
+    height: 80vh;
 }
 
 .pontinhos {
@@ -40,24 +40,61 @@
     right: -70px;
     top: -45px;
 }
-.mancha{
+
+.mancha {
     left: -90px;
-    top: -134%;
+    top: -14%;
     width: 350px;
     height: 350px;
     z-index: 2;
 }
-.triangulo{
+/*Start - Configuração triangulos*/
+.triangulo {
     left: 41%;
     top: 143px;
 }
-.triangulo-2{
+
+.triangulo-2 {
     left: 20%;
     top: -150px;
 }
-.z-index-2{
+
+.triangulo-3 {
+    left: 90%;
+    top: 130px;
+}
+
+.triangulo-4 {
+    left: 60%;
+    top: -100px;
+}
+/*END - Configuração triangulos*/
+.z-index-2 {
     z-index: 2;
 }
+
+.seta-torta {
+    top: -50%;
+}
+
+.box-flutuante {
+    background-color: rgba(68, 156, 248, 0.2);
+    color: #6c757d;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-top: 1rem;
+    max-width: 250px;
+}
+
+@media (max-width: 768px) {
+    .box-flutuante {
+        font-size: 0.875rem;
+        
+    }
+}
+
 /* Media Queries */
 
 /* Small Devices (>= 40em, approximately 640px) */
@@ -66,7 +103,7 @@
         top: 0;
         margin-top: 3rem;
     }
-    
+
 
     .carousel-caption p {
         margin-bottom: 1.25rem;
@@ -92,6 +129,11 @@
         padding: 0 5.2vw;
         right: 0;
         left: 0;
+        align-content: space-evenly;
+    }
+    .title-hero {
+        font-size: 2.5rem;
+        margin-top: var(--bs-gutter-y);
     }
 }
 
@@ -100,12 +142,18 @@
     .title-hero {
         font-size: 3.5rem;
     }
-    .manHero{
+
+    .manHero {
         width: 350px;
     }
-    .pontinhos{
+
+    .pontinhos {
         right: 26%;
-        top: 65%;   
+        top: 65%;
+    }
+
+    .movingX {
+        animation: movingX-lg 10s linear infinite;
     }
 }
 
@@ -113,13 +161,16 @@
     .title-hero {
         font-size: 2.5rem;
     }
-    .manHero{
+
+    .manHero {
         width: 300px;
     }
+
     .pontinhos {
         top: 55%;
         right: 24%;
     }
+
     .circulo {
         right: -150px;
         top: -45px;
@@ -131,22 +182,27 @@
 
 /* Tablets (<= 992px) */
 @media (max-width: 992px) {
-    .circulo,.mancha{
-        display: none;
+
+    .circulo,
+    .mancha,
+    .pontinhos {
+        display: none !important;
     }
+
     .carousel-item {
         height: 40rem;
     }
 
-    .pontinhos {
-        top: 28%;
-        right: 57%;
-    }
     .title-hero {
         font-size: 2rem;
     }
+
     .manHero {
         width: 200px;
+    }
+
+    .movingX {
+        animation: movingX 10s linear infinite;
     }
 }
 
@@ -159,14 +215,12 @@
     .pontinhos {
         display: none !important;
 
-   
+
     }
 }
 
 /* Portrait Phones (<= 576px) */
-@media (max-width: 576px) {
-
-}
+@media (max-width: 576px) {}
 
 /* Extra Small Devices (<= 350px) */
 @media (max-width: 350px) {
@@ -178,21 +232,33 @@
         height: 155px;
     }
 }
-.movingX {
-    animation: movingX 8s linear infinite;
-}
+
 
 @keyframes movingX {
     0% {
-        transform: translateX(0);
+        transform: translateX(20%);
     }
 
     50% {
-        transform: translateX(50px);
+        transform: translateX(60%);
     }
 
     100% {
-        transform: translateX(0);
+        transform: translateX(20%);
+    }
+}
+
+@keyframes movingX-lg {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(0%);
     }
 }
 
