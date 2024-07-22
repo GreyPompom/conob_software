@@ -43,11 +43,11 @@ function Hero() {
                                 <div class="position-fixed end-0 p-3 ">
                                     <img src={triangulo} class="position-absolute triangulo-4 spin" alt="triangulos 1 azul e 1 branco" width="50" height="50" loading="lazy"></img>
                                 </div>
-                                <div class="col-10 col-sm-8 col-lg-6 mx-sm-auto">
+                                <div class="col-10 col-sm-8 col-lg-4 mx-sm-auto">
                                     <img src={pontinhos} class="pontinhos d-block position-absolute" alt="Bootstrap Themes" width="300" height="500" loading="lazy"></img>
                                     <img src={manHero} class="manHero d-block mx-lg-auto img-fluid ml-lg-8 movingX" alt="Bootstrap Themes" width="250" height="500" loading="lazy"></img>
                                 </div>
-                                <div className="col-lg-6 z-index-2">
+                                <div className="col-lg-8 z-index-2">
                                     <h1 className="title-hero fw-bold text-secondary-bg lh-1 mb-3" fill='var(--bs-tertiary-bg)'>Planos comerciais flexíveis para <span className='text-blue'>impulsionar o seu negócio</span> </h1>
                                     {/* <img src={setaTorta} class="d-block ml-lg-8 mx-lg-auto seta-torta " alt="Bootstrap Themes" width="60" height="60" loading="lazy"></img>
                                     <div className="box-flutuante d-block">Inovação em cada algoritmo, excelência em cada linha.</div> */}

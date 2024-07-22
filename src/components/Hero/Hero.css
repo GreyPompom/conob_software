@@ -48,6 +48,7 @@
     height: 350px;
     z-index: 2;
 }
+
 /*Start - Configuração triangulos*/
 .triangulo {
     left: 41%;
@@ -68,6 +69,7 @@
     left: 60%;
     top: -100px;
 }
+
 /*END - Configuração triangulos*/
 .z-index-2 {
     z-index: 2;
@@ -91,7 +93,7 @@
 @media (max-width: 768px) {
     .box-flutuante {
         font-size: 0.875rem;
-        
+
     }
 }
 
@@ -131,6 +133,7 @@
         left: 0;
         align-content: space-evenly;
     }
+
     .title-hero {
         font-size: 2.5rem;
         margin-top: var(--bs-gutter-y);
@@ -141,6 +144,7 @@
 @media (max-width: 2000px) {
     .title-hero {
         font-size: 3.5rem;
+        max-width: 65%;
     }
 
     .manHero {
@@ -153,13 +157,14 @@
     }
 
     .movingX {
-        animation: movingX-lg 10s linear infinite;
+        animation: movingX-lgg 10s linear infinite;
     }
 }
 
 @media (max-width: 1600px) {
     .title-hero {
-        font-size: 2.5rem;
+        font-size: 3.0rem;
+        max-width: 85%;
     }
 
     .manHero {
@@ -176,6 +181,9 @@
         top: -45px;
     }
 
+    .movingX {
+        animation: movingX-lg 10s linear infinite;
+    }
 }
 
 /* Smaller Devices Adjustments */
@@ -250,18 +258,31 @@
 
 @keyframes movingX-lg {
     0% {
-        transform: translateX(0%);
+        transform: translateX(-5%);
     }
 
     50% {
-        transform: translateX(50%);
+        transform: translateX(20%);
     }
 
     100% {
-        transform: translateX(0%);
+        transform: translateX(-5%);
     }
 }
 
+@keyframes movingX-lgg {
+    0% {
+        transform: translateX(-10%);
+    }
+
+    50% {   
+        transform: translateX(30%);
+    }
+
+    100% {
+        transform: translateX(-10%);
+    }
+}
 .spin {
     animation: spin 15s linear infinite;
 }
