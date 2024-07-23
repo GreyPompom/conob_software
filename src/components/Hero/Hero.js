@@ -12,7 +12,7 @@ import './Hero.css';
 function Hero() {
     return (
 
-        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div id="myCarousel" class="carousel slide mb-6 position-relative" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -21,26 +21,26 @@ function Hero() {
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="transparent" /></svg>
-                    <div class="container">
+                    <div class="container ">
                         <div class="carousel-caption text-start">
-                            <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
-                                <div class="position-fixed top-0 end-0 p-3">
+                            <div class="row flex-lg-row-reverse align-items-center g-5 py-4 ">
+                                <div class="position-absolute top-0 end-0 p-3">
                                     <img src={circulo} class="position-absolute circulo" alt="circulo azul" width="300" height="300" loading="lazy"></img>
                                     
                                 </div>
-                                <div class="position-fixed end-0 p-3 ">
+                                <div class="position-absolute end-0 p-3 ">
                                     <img src={manchaazul} class="position-absolute mancha" alt="mancha azul" width="320" height="320" loading="lazy"></img>
                                 </div>
-                                <div class="position-fixed end-0 p-3 ">
+                                <div class="position-absolute end-0 p-3 ">
                                     <img src={triangulo} class="position-absolute triangulo spin" alt="triangulos 1 azul e 1 branco" width="50" height="50" loading="lazy"></img>
                                 </div>
-                                <div class="position-fixed end-0 p-3 ">
+                                <div class="position-absolute end-0 p-3 ">
                                     <img src={triangulo} class="position-absolute triangulo-2 spin" alt="triangulos 1 azul e 1 branco" width="50" height="50" loading="lazy"></img>
                                 </div>
-                                <div class="position-fixed end-0 p-3 ">
+                                <div class="position-absolute end-0 p-3 ">
                                     <img src={triangulo} class="position-absolute triangulo-3 spin" alt="triangulos 1 azul e 1 branco" width="50" height="50" loading="lazy"></img>
                                 </div>
-                                <div class="position-fixed end-0 p-3 ">
+                                <div class="position-absolute end-0 p-3 ">
                                     <img src={triangulo} class="position-absolute triangulo-4 spin" alt="triangulos 1 azul e 1 branco" width="50" height="50" loading="lazy"></img>
                                 </div>
                                 <div class="col-10 col-sm-8 col-lg-4 mx-sm-auto">
