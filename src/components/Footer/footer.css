@@ -1,0 +1,9 @@
+footer .logo-navbar{
+    height: 70px;
+    width: 130px;
+  }
+    footer {
+        padding: 0 5.2vw;
+        margin-right:0 !important;
+        margin-left:0 !important;
+    }
