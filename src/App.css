@@ -1,8 +1,13 @@
 .App {
   text-align: center;
   background-color: --bs-body-color;
-}
 
+}
+@media (min-width: 992px) {
+  .App {
+    margin-top: 9vh;
+  }
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
