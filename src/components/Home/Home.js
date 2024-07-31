@@ -1,11 +1,13 @@
 import Hero from "../Hero/Hero";
+import ThreePoints from "../ThreePoints/ThreePoints";
 
 function Home () {
   return (
     <main>
         <div className="Home">
      <Hero />
-    </div>
+     <ThreePoints/>
+        </div>
     </main>
     
   )
