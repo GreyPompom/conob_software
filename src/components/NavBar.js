@@ -11,7 +11,7 @@ function NavBar() {
     <>
       <nav className="navbar navbar-expand-lg backdrop-blur-sm bg-white fixed-top  shadow-sm">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             <img src={logo} alt="Logo" className="logo-navbar" />
           </a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

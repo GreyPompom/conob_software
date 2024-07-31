@@ -1,0 +1,36 @@
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+/* rtl:end:ignore */
+
+.box-blue {
+    background: rgb(33, 148, 243);
+    background: linear-gradient(0deg, rgba(33, 149, 243, 0.781) 9%, rgba(42, 168, 241, 0.384) 64%);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+.numero {
+    font-size: 100px;
+    font-weight: bold;
+    color: #0671E0;
+    position: absolute;
+    right: 5%;
+    top: -20px;
+    z-index: 2;
+}
+
+.sis{
+    color: #4D4D4D;
+}
