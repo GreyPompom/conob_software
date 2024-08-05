@@ -1,0 +1,125 @@
+.gradient-blue{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(6,113,224,0.69) 36%, rgba(18,120,225,0.69) 67%, rgba(255,255,255,1) 100%);
+
+}
+
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+h1 .highlight {
+    color: #3f51b5;
+    border-bottom: 2px solid #3f51b5;
+}
+
+.software-section {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.menu {
+    background: #e3f2fd;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-right: 1px solid #ddd;
+}
+
+.menu-item {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #333;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    background: #3f51b5;
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.details h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.details p {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.details ul li {
+    font-size: 1em;
+    color: #333;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.details ul li::before {
+    content: '✔';
+    color: #3f51b5;
+    margin-right: 10px;
+}
+
+.info-button {
+    background: #3f51b5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.info-button:hover {
+    background: #303f9f;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 10px;
+}

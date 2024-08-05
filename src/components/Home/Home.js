@@ -1,4 +1,6 @@
 import Hero from "../Hero/Hero";
+import NossaEstrutura from "../NossaEstrutura/NossaEstrutura";
+import NossosSoftwares from "../NossosSoftwares/NossosSoftwares";
 import ThreePoints from "../ThreePoints/ThreePoints";
 
 function Home () {
@@ -7,6 +9,8 @@ function Home () {
         <div className="Home">
      <Hero />
      <ThreePoints/>
+     <NossosSoftwares />
+     <NossaEstrutura/>
         </div>
     </main>
     

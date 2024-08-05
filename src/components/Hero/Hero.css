@@ -18,7 +18,7 @@
     z-index: 10;
 }
 
- .carousel-item {
+.hero .carousel-item {
     height: 80vh;
 }
 
@@ -210,7 +210,7 @@
         display: none !important;
     }
 
-    .carousel-item {
+    .hero .carousel-item {
         height: 40rem;
     }
 
@@ -225,11 +225,15 @@
     .movingX {
         animation: movingX 10s linear infinite;
     }
+    .hero .carousel {
+        margin-bottom: 4rem;
+        min-height: 80vh;
+    }
 }
 
 /* Landscape Phones (<= 768px) */
 @media (max-width: 768px) {
-    .carousel-item {
+    .hero .carousel-item {
         height: 43rem;
     }
 
