@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ThreePoints.css';
 import { Carousel } from 'react-bootstrap';
 import { useSwipeable } from 'react-swipeable';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function ThreePoints() {
-
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, []);
+    
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex, e) => {
@@ -22,7 +26,7 @@ function ThreePoints() {
     });
     return (
         <div className="container marketing">
-            <div className="text-center text-secondary">
+            <div className="text-center text-secondary ">
                 <div className="container py-3">
                     <h1 className="sis">Por que a trabalhar com a Conob</h1>
                     <p className="col-lg-12 mx-auto">
@@ -33,7 +37,7 @@ function ThreePoints() {
             <div className="row justify-content-center gap-5 d-none d-lg-flex">
                 <div className="col-lg-3 position-relative py-3">
                     <h1 className="numero">01</h1>
-                    <div className="box-blue">
+                    <div className="box-blue " data-aos="fade-up">
                         <h2 className="fw-normal mt-3">Heading</h2>
                         <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
                         <p><a className="btn btn-secondary" href="#">View details</a></p>
@@ -41,7 +45,7 @@ function ThreePoints() {
                 </div>
                 <div className="col-lg-3 position-relative py-3">
                     <h1 className="numero">02</h1>
-                    <div className="box-blue">
+                    <div className="box-blue" data-aos="fade-up">
                         <h2 className="fw-normal mt-3">Heading</h2>
                         <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
                         <p><a className="btn btn-secondary" href="#">View details</a></p>
@@ -49,7 +53,7 @@ function ThreePoints() {
                 </div>
                 <div className="col-lg-3 position-relative py-3">
                     <h1 className="numero">03</h1>
-                    <div className="box-blue">
+                    <div className="box-blue" data-aos="fade-up">
                         <h2 className="fw-normal mt-3">Heading</h2>
                         <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
                         <p><a className="btn btn-secondary" href="#">View details</a></p>

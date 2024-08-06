@@ -1,0 +1,54 @@
+
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-background {
+    width: 50px;
+    height: 50px;
+    background-color: #b3e5fc; /* Azul claro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius:50px 15px 50px 15px;
+    -moz-border-radius:50px 15px 50px 15px;
+    -webkit-border-radius:20px 10px 30px 10px;
+    margin-left: 30px;
+}
+
+.icon-struct {
+    position: absolute;
+    font-size: 24px;
+    color: #3A3B7B; /* Azul mais escuro para o ícone */
+    left:-5px
+}
+
+.card-title {
+    margin-top: 20px;
+}
+
+.card-text {
+    color: #666;
+}
+.mancha {
+    left: -90px;
+    top: -164%;
+    width: 350px;
+    height: 350px;
+    z-index: 0;
+}
+@media (max-width: 992px) {
+
+    .circulo,
+    .mancha,
+    .pontinhos {
+        display: none !important;
+    }
+}
+
+.row-cards{
+    z-index: 5;
+}
