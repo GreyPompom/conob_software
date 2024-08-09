@@ -28,7 +28,7 @@ function ThreePoints() {
         <div className="container marketing">
             <div className="text-center text-secondary ">
                 <div className="container py-3">
-                    <h1 className="sis">Por que a trabalhar com a Conob</h1>
+                    <h1 className="sis text-primary">Por que a trabalhar com a Conob</h1>
                     <p className="col-lg-12 mx-auto">
                         Software sob medida. A sua empresa, mais inteligente.
                     </p>

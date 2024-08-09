@@ -20,9 +20,7 @@
 .box-blue {
     background: linear-gradient(359deg, #26aeee, #8ad7fb, #12b4ff);
     background-size: 600% 600%;
-    -webkit-animation: brilinho 13s ease infinite;
-    -moz-animation: brilinho 13s ease infinite;
-    animation: brilinho 13s ease infinite;
+
     border-radius: 10px;
     padding: 20px;
     color: white;
