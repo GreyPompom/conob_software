@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavLink, useLocation } from 'react-router-dom';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import logo from '../assets/logo/logo_conob_zoom.png';
+import logo from '../../assets/logo/logo_conob_zoom.png';
 import './NavBar.css';
 
 function NavBar() {

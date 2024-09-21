@@ -1,0 +1,19 @@
+.contact-us .adress{
+    padding-bottom: 2%;
+    border-bottom: white 1px solid;
+}
+
+.container-form-email .card{
+    border-radius: 16px;
+}
+
+.container-form-email .card .btn{
+    border-radius: 18px;
+    margin-right: 0;
+    width: 70%;
+}
+
+.container-form-email .card small{
+    font-size: 11px;
+    display: inline-block;
+}

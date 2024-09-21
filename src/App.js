@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Politica from './components/Politica/Politica';
 import Page404 from './components/404/404';
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
 import Loading from './components/Loading/Loading';
 
 function App() {
@@ -32,7 +32,9 @@ function App() {
         {/* Adicione outras rotas aqui se necessário */}
         <Route path="*" element={<Page404 />} />
       </Routes>
+
     </React.StrictMode>
+    <scrollToTop/>
     </div>
   );
 }

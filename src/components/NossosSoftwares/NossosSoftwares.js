@@ -2,7 +2,7 @@ import './NossosSoftware.css';
 
 function NossosSoftwares() {
   return (
-    <div className="gradient-blue py-5">
+    <div className="nossos-softwares gradient-blue py-5">
       <div class="container text-center py-5 d-grid ">
         <h1>Nossos <span class="highlight">Softwares</span></h1>
         <div class="software-section row bg-white rounded shadow overflow-hidden mt-4 ">
