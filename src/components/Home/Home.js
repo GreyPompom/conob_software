@@ -3,7 +3,7 @@ import NossaEstrutura from "../NossaEstrutura/NossaEstrutura";
 import NossosSoftwares from "../NossosSoftwares/NossosSoftwares";
 import ThreePoints from "../ThreePoints/ThreePoints";
 import FrequentlyQuestions from "../FrequentlyQuestions/Frequentlyquestions";
-import ContactUs from "../Contact/Contact";
+import ContactUs from "../ContactUs/Contact";
 import ResultsSection from "../Results/Results";
 function Home () {
   return (
