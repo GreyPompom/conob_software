@@ -30,7 +30,7 @@ function ThreePoints() {
                 <div className="container py-3">
                     <h1 className="sis text-primary">Por que a trabalhar com a Conob</h1>
                     <p className="col-lg-12 mx-auto">
-                        Software sob medida. A sua empresa, mais inteligente.
+                    Na Conob, cada projeto é desenvolvido com foco no cliente. Oferecemos um atendimento especializado que respeita as necessidades únicas de cada parceiro, criando soluções sob medida para garantir resultados eficientes.
                     </p>
                 </div>
             </div>
@@ -38,24 +38,24 @@ function ThreePoints() {
                 <div className="col-lg-3 position-relative py-3">
                     <h1 className="numero">01</h1>
                     <div className="box-blue " data-aos="fade-up">
-                        <h2 className="fw-normal mt-3">Heading</h2>
-                        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                        <h2 className="fw-normal mt-3"> Atendimento</h2>
+                        <p>Na Conob, cada cliente é único. Valorizamos suas necessidades e oferecemos soluções sob medida para alcançar os melhores resultados.</p>
                         <p><a className="btn btn-secondary" href="#">View details</a></p>
                     </div>
                 </div>
                 <div className="col-lg-3 position-relative py-3">
                     <h1 className="numero">02</h1>
                     <div className="box-blue" data-aos="fade-up">
-                        <h2 className="fw-normal mt-3">Heading</h2>
-                        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                        <h2 className="fw-normal mt-3">Customização</h2>
+                        <p>Nossos softwares são adaptados para atender às necessidades específicas de cada cliente, garantindo que cada projeto seja único.</p>
                         <p><a className="btn btn-secondary" href="#">View details</a></p>
                     </div>
                 </div>
                 <div className="col-lg-3 position-relative py-3">
                     <h1 className="numero">03</h1>
                     <div className="box-blue" data-aos="fade-up">
-                        <h2 className="fw-normal mt-3">Heading</h2>
-                        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                        <h2 className="fw-normal mt-3">Inovação</h2>
+                        <p>Estamos sempre evoluindo nossas ferramentas e tecnologias para oferecer soluções cada vez mais modernas e eficientes.</p>
                         <p><a className="btn btn-secondary" href="#">View details</a></p>
                     </div>
                 </div>
@@ -67,8 +67,8 @@ function ThreePoints() {
                         <div className="col-md-12 position-relative py-3">
                             <h1 className="numero">01</h1>
                             <div className="box-blue">
-                                <h2 className="fw-normal mt-3">Heading</h2>
-                                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                                <h2 className="fw-normal mt-3">Atendimento</h2>
+                                <p>Na Conob, cada cliente é único. Valorizamos suas necessidades e oferecemos soluções sob medida para alcançar os melhores resultados.</p>
                                 <p><a className="btn btn-secondary" href="#">View details</a></p>
                             </div>
                         </div>
@@ -77,8 +77,8 @@ function ThreePoints() {
                         <div className="col-md-12 position-relative py-3">
                             <h1 className="numero">02</h1>
                             <div className="box-blue">
-                                <h2 className="fw-normal mt-3">Heading</h2>
-                                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                                <h2 className="fw-normal mt-3">Customização</h2>
+                                <p>Nossos softwares são adaptados para atender às necessidades específicas de cada cliente, garantindo que cada projeto seja único.</p>
                                 <p><a className="btn btn-secondary" href="#">View details</a></p>
                             </div>
                         </div>
@@ -87,8 +87,8 @@ function ThreePoints() {
                         <div className="col-md-12 position-relative py-3">
                             <h1 className="numero">03</h1>
                             <div className="box-blue">
-                                <h2 className="fw-normal mt-3">Heading</h2>
-                                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                                <h2 className="fw-normal mt-3">Inovação</h2>
+                                <p>Estamos sempre evoluindo nossas ferramentas e tecnologias para oferecer soluções cada vez mais modernas e eficientes.</p>
                                 <p><a className="btn btn-secondary" href="#">View details</a></p>
                             </div>
                         </div>

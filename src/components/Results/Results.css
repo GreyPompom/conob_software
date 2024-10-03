@@ -23,25 +23,38 @@
     font-size: 10px;
 }
 
-.card-result h1{
-    font-size: 60px;
-}
 
 .results-section h1 {
     color: #0056b3;
     text-align: start;
+}
+.card-result h1{
+    font-size: 50px;
+    text-align: center;
 }
 
 .results-section .pos-title{
     text-align: start;
 }
 
+@media (m-width: 768px) {
+
+}
 
 
 @media (max-width: 768px) {
     .results-section .title,.results-section .pos-title {
         text-align: center;
         color: white;
+    }
+
+    .results-section .card{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+    .results-section .card .text-primary {
+        text-align: center;
     }
 }
 .results-section h3 {
@@ -52,9 +65,15 @@
 .results-section p {
     font-size: 1.1rem;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .card{
     background-color: white;
 }
 
+
+
+.image-animation:hover {
+    transform: scale(1.2); /* Aumenta a imagem ligeiramente ao passar o mouse */
+}

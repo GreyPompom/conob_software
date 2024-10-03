@@ -1,9 +1,10 @@
+import image404 from '../../assets/404-amico.png';
 function page404() {
     return (
         <div class="container vh-100 d-flex justify-content-center align-items-center">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1>404</h1>
+                    <img src={image404} alt="404" width={300}/>
                     <h2>UH OH! You're lost.</h2>
                     <p>The page you are looking for does not exist.
                         How you got here is a mystery. But you can click the button below
