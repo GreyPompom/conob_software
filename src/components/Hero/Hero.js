@@ -52,7 +52,7 @@ function Hero() {
                                         {/* <img src={setaTorta} class="d-block ml-lg-8 mx-lg-auto seta-torta " alt="Bootstrap Themes" width="60" height="60" loading="lazy"></img>
                                     <div className="box-flutuante d-block">Inovação em cada algoritmo, excelência em cada linha.</div> */}
                                         <div className="botao-contact d-grid gap-2 d-md-flex justify-content-md-start ">
-                                            <a className="btn btn-primary rounded-pill mt-md-5" href="#" role="button">
+                                            <a className="btn btn-primary rounded-pill mt-md-5" href="/entre-contato" role="button">
                                                 Entre em contato <i className="bi bi-arrow-right-short"></i>
                                             </a>
                                         </div>

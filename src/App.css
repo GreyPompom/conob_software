@@ -32,4 +32,9 @@
   }
 }
 
-  
+.zoom:hover {
+  transform: scale(1.2); 
+}
+.zoom-05:hover {
+  transform: scale(1.1);
+}

@@ -49,7 +49,7 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/sobre"
+                to="/sobre-nos"
                 className={`nav-link custom-active ${location.pathname === '/sobre' ? 'active' : ''}`}
                 aria-current={location.pathname === '/sobre' ? 'page' : undefined}
               >
@@ -66,7 +66,7 @@ function NavBar() {
               </NavLink>
             </li>
             </ul>
-            <a className="btn btn-primary rounded-pill ms-2" href="#" role="button">
+            <a className="btn btn-primary rounded-pill ms-2" href="/entre-contato" role="button">
               Entre em contato <i className="bi bi-arrow-right-short"></i>
             </a>
           </div>

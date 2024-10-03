@@ -3,6 +3,10 @@ import './App.css';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
+import ContactUs from './components/ContactUs/page-contact';
+import PageFrequentlyQuestions from './components/FrequentlyQuestions/page-frequently-questions';
+import About from './components/AboutUs/page-aboutUs';
+import Softwares from './components/NossosSoftwares/page-nossosSoftwares';
 import Politica from './components/Politica/Politica';
 import Page404 from './components/404/404';
 import NavBar from './components/NavBar/NavBar';
@@ -26,13 +30,13 @@ function App() {
      <React.StrictMode>
       <Routes>
          <Route path="/" element={<Home />} />
-       {/* <Route path="/sistemas" element={<Sistemas />} />
-        <Route path="/about" element={<About />} />*/}
+         <Route path="/entre-contato" element={<ContactUs />} />
+         <Route path="/perguntas-frequentes" element={<PageFrequentlyQuestions />} />
+        <Route path="/sistemas" element={<Softwares />} />
+        <Route path="/sobre-nos" element={<About />}/>
         <Route path="/politica" element={<Politica />} /> 
-        {/* Adicione outras rotas aqui se necessário */}
         <Route path="*" element={<Page404 />} />
       </Routes>
-
     </React.StrictMode>
     <scrollToTop/>
     </div>

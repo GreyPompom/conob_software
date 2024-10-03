@@ -18,8 +18,8 @@ function NossaEstrutura() {
                 <img src={manchaazul} class="position-absolute mancha" alt="mancha azul" width="320" height="320" loading="lazy"></img>
             </div>
             <div class="row-cards row justify-content-center mt-5">
-                <div class="col-md-3 mb-4">
-                    <div class="card shadow border-0 h-100 py-4" data-aos="flip-left">
+                <div class="col-md-3 mb-4 zoom-05">
+                    <div class="card shadow border-0 h-100 py-4 " data-aos="flip-left">
                         <div class="card-body" >
                             <div class="icon-container mb-3">
                                 <div class="icon-background">
@@ -31,7 +31,7 @@ function NossaEstrutura() {
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-md-3 mb-4 zoom-05">
                     <div class="card shadow border-0 h-100 py-4" data-aos="flip-left">
                         <div class="card-body">
                             <div class="icon-container mb-3">
@@ -44,7 +44,7 @@ function NossaEstrutura() {
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-md-3 mb-4 zoom-05">
                     <div class="card shadow border-0 h-100 py-4" data-aos="flip-left">
                         <div class="card-body">
                             <div class="icon-container mb-3">
@@ -57,7 +57,7 @@ function NossaEstrutura() {
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-md-3 mb-4 zoom-05">
                     <div class="card shadow border-0 h-100 py-4" data-aos="flip-left">
                         <div class="card-body">
                             <div class="icon-container mb-3">
@@ -67,7 +67,7 @@ function NossaEstrutura() {
                             </div>
                             <h5 class="card-title">Sobre nós</h5>
                             <p class="card-text">Saiba mais sobre nossa empresa e nossa missão.</p>
-                            <a href="#" class="btn btn-primary mt-3">Clique aqui</a>
+                            <a href="/sobre-nos" class="btn btn-primary mt-3">Clique aqui</a>
                         </div>
                     </div>
                 </div>

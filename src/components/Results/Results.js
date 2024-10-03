@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Results.css'; // Assuma que você personalizou os estilos aqui
+import serverImage from '../../assets/Server-amico.png';
+import './Results.css'; 
 
 // Função para animar a contagem
 const animateValue = (start, end, duration, setValue) => {
@@ -17,7 +18,7 @@ const animateValue = (start, end, duration, setValue) => {
 };
 
 // Componente para exibir cada estatística
-const StatCard = ({ value, unit, label }) => {
+const StatCard = ({ value, unit, label, sinal }) => {
     const [displayValue, setDisplayValue] = useState(0);
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
@@ -28,8 +29,8 @@ const StatCard = ({ value, unit, label }) => {
     }, [inView, value]);
 
     return (
-        <div className="card-body flex-grow-1" ref={ref}>
-            <h1 className='text-primary '>{displayValue} <span className="small fs-5">{unit}</span></h1>
+        <div className="card-body flex-grow-1 " ref={ref}>
+            <h1 className='text-primary '> <span className="small fs-5">{sinal}</span>{displayValue} <span className="small fs-5">{unit}</span></h1>
             <p className='f'>{label}</p>
         </div>
     );
@@ -42,30 +43,31 @@ const ResultsSection = () => {
             <div className="container py-5">
                 <div className="row ">
                     {/* Imagem */}
-                    <div className="col-md-4 mb-4 mb-md-0">
-                        <img src="your-image-url.png" alt="Technology Illustration" className="img-fluid" />
+                    <div className="col-md-4 mb-4 mb-md-0 image-animation">
+                        <img src={serverImage} alt="Technology Illustration" className="img-fluid" />
                     </div>
 
                     {/* Texto e Estatísticas */}
                     <div className="col-md-8 text-start">
-                    <h1 className="title mb-4 ">Resultados que Geram Confiança</h1>
-                    <p className="pos-title mb-5 ">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis efficitur nisi.
+                        <h1 className="title mb-4 ">Resultados que Geram Confiança</h1>
+                        <p className="pos-title mb-5 ">
+                        Desenvolvemos soluções robustas e seguras que fortaleceram a confiança de nossos clientes, impulsionando a eficiência operacional e a satisfação com resultados consistentes e de alta qualidade.
                         </p>
                         <div className="row  row-cards text-primary">
                             <div class="card-result col-sm-9">
-                                <div className="card shadow border-0 h-100 d-flex flex-column p-2 col-sm-12">
-                                    <StatCard value={70} unit="%" label="Projetos de sucesso" />
+                                <div className="card shadow border-0 h-100 d-flex flex-column p-2 col-sm-12 zoom">
+                                    <StatCard value={1000} unit="k" label="Documentos Eletronicamente Emitidos" sinal="+" />
                                 </div>
                             </div>
                             <div class="card-result col-sm-9">
-                                <div className="card shadow border-0 h-100 d-flex flex-column p-2 col-sm-12">
-                                    <StatCard value={50} unit="k" label="Clientes atendidos" />
+                                <div className="card shadow border-0 h-100 d-flex flex-column p-2 col-sm-12 zoom">
+                                    <StatCard value={500} unit="k " label="Usuários Impactados" sinal="+" />
                                 </div>
                             </div>
                             <div class="card-result col-sm-9">
-                                <div className="card shadow border-0 h-100 d-flex flex-column p-2 col-sm-12">
-                                    <StatCard value={63} unit="k" label="Usuários ativos" />
+                                <div className="card shadow border-0 h-100 d-flex flex-column p-2 col-sm-12 zoom">
+                                    <StatCard value={500} unit="" label="Usuários Diretos" sinal="+" />
+
                                 </div>
                             </div>
                         </div>
