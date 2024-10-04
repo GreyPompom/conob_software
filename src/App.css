@@ -31,10 +31,11 @@
     transform: rotate(360deg);
   }
 }
-
+@media(min-width: 1024px) {
 .zoom:hover {
   transform: scale(1.2); 
 }
 .zoom-05:hover {
   transform: scale(1.1);
+}
 }
