@@ -1,6 +1,7 @@
 footer .logo-navbar{
     height: 70px;
     width: 130px;
+    object-fit: contain;
   }
     footer {
         padding: 0 5.2vw;

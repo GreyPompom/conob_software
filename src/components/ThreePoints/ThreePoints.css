@@ -86,7 +86,7 @@
     color: #0671E0;
     position: absolute;
     right: 5%;
-    top: -20px;
+    top: 2px;
     z-index: 2;
 }
 
@@ -134,3 +134,77 @@
             transform-origin: 100% 0%;
   }
 }
+/* Regras específicas para mobile */
+@media (max-width: 768px) {
+    .sis {
+      font-size: 2rem;
+    }
+  
+    .numero {
+        font-size: 6rem;
+        right: 35px;
+        top: -25px;
+    }
+  
+    .box-blue {
+      padding: 1rem;
+      margin: 0 1.5rem;
+      border-radius: 16px;
+    }
+  
+    .carousel-item .box-blue {
+      text-align: center;
+      padding: 2rem;
+    }
+  
+    .btn-secondary {
+      background-color: #0056b3;
+      border: none;
+      color: white;
+    }
+  
+    .btn-secondary:hover {
+      background-color: #004494;
+    }
+  }
+  
+  /* Para telas médias */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .sis {
+      font-size: 1.6rem;
+    }
+  
+    .numero {
+      font-size: 3.5rem;
+    }
+  }
+
+  .carousel-mobile .carousel-indicators button{
+    background-color: #0056b3;
+    border: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 15px 5px 0 5px;
+  }
+
+ 
+  .lampada{
+    left: -258px;
+    top: -48px;
+  }
+  .ondinha{
+    left: 200px;
+    top: -25px;
+  } 
+  
+  @media (max-width: 768px){
+    .lampada{
+        left: -130%;
+        top: -48px;
+      }
+      .ondinha{
+        left: 120px;
+        top: -60px;
+      }
+  }
