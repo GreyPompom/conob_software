@@ -2,7 +2,7 @@ import FrequentlyQuestions from "../FrequentlyQuestions/Frequentlyquestions";
 
 function PageContact () {
     return (
-        <div>
+        <div class="mt-5 ">
         <FrequentlyQuestions/>
         </div>
 
