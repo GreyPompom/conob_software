@@ -4,9 +4,9 @@ import { Carousel } from 'react-bootstrap';
 import { useSwipeable } from 'react-swipeable';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AOS from 'aos';
-import imagem_lampada from '../../assets/Abstratos/lampada_engrenagem.png';
-import imagem_ondinha from '../../assets/Abstratos/ondinha.png';
-import imagem_conob_web from '../../assets/Abstratos/conob_web.png';
+import imagem_lampada from '../../assets/abstratos/lampada_engrenagem.png';
+import imagem_ondinha from '../../assets/abstratos/ondinha.png';
+import imagem_conob_web from '../../assets/abstratos/conob_web.png';
 import 'aos/dist/aos.css';
 
 const PointCard = ({ number, title, description }) => (

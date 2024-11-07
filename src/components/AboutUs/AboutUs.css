@@ -22,7 +22,7 @@ font-size: 16px;
 
 
 @media (max-width: 768px) {
-  .sobre-nos.title,.sobre-nos .pos-title {
+  .sobre-nos .title,.sobre-nos .pos-title {
       text-align: center;
       color: white;
   }
@@ -34,6 +34,9 @@ font-size: 16px;
   }
   .sobre-nos .card .text-primary {
       text-align: center;
+  }
+  .sobre-nos{
+    margin-top: 25vh;
   }
 }
 .title {

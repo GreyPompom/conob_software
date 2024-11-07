@@ -1,6 +1,6 @@
-import manchaazul from '../../assets/Abstratos/mancha-azul-abstrata.png';
+import manchaazul from '../../assets/abstratos/mancha-azul-abstrata.png';
 import image_faq from '../../assets/FAQs-rafiki.png';
-import triangulo from '../../assets/Abstratos/triangulos-branco-azul-pequenos.png';
+import triangulo from '../../assets/abstratos/triangulos-branco-azul-pequenos.png';
 import './Box.css';
 function BoxFrequentlyQuestions() {
     return (

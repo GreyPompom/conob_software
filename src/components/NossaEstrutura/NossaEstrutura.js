@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './NossaEstrutura.css';
 import logo from '../../assets/logo/logo_conob_zoom.png';
-import manchaazul from '../../assets/Abstratos/mancha-azul-abstrata.png';
+import manchaazul from '../../assets/abstratos/mancha-azul-abstrata.png';
 
 function NossaEstrutura() {
     useEffect(() => {
