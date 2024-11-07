@@ -39,9 +39,9 @@ const StatCard = ({ value, unit, label, sinal }) => {
 // Componente principal da seção de resultados
 const ResultsSection = () => {
     return (
-        <div className="results-section text-white py-5 gradient-blue text-start">
+        <div className="results-section text-white py-5 gradient-blue text-start"  >
             <div className="container py-5">
-                <div className="row ">
+                <div className="row " data-aos="zoom-in">
                     {/* Imagem */}
                     <div className="col-md-4 mb-4 mb-md-0 image-animation">
                         <img src={serverImage} alt="Technology Illustration" className="img-fluid" />
@@ -55,17 +55,17 @@ const ResultsSection = () => {
                         </p>
                         <div className="row  row-cards text-primary">
                             <div class="card-result col-sm-9">
-                                <div className="card shadow border-0 h-100 d-flex flex-column p-2 col-sm-12 zoom">
+                                <div className="card shadow border-0 h-100 d-flex flex-column p-2 col-sm-12 ">
                                     <StatCard value={1000} unit="k" label="Documentos Eletronicamente Emitidos" sinal="+" />
                                 </div>
                             </div>
                             <div class="card-result col-sm-9">
-                                <div className="card shadow border-0 h-100 d-flex flex-column p-2 col-sm-12 zoom">
+                                <div className="card shadow border-0 h-100 d-flex flex-column p-2 col-sm-12 ">
                                     <StatCard value={500} unit="k " label="Usuários Impactados" sinal="+" />
                                 </div>
                             </div>
                             <div class="card-result col-sm-9">
-                                <div className="card shadow border-0 h-100 d-flex flex-column p-2 col-sm-12 zoom">
+                                <div className="card shadow border-0 h-100 d-flex flex-column p-2 col-sm-12 ">
                                     <StatCard value={500} unit="" label="Usuários Diretos" sinal="+" />
 
                                 </div>

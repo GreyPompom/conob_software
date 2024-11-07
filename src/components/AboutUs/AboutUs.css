@@ -1,0 +1,134 @@
+@media (min-width: 992px) {
+  .sobre-nos {
+    padding: 0 8.2vw;
+  }
+}
+
+.sobre-nos.gradient-blue {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(6, 111, 224, 0.637) 36%, rgba(18, 121, 225, 0.466) 67%, rgba(255, 255, 255, 0.726) 100%);
+}
+
+.sobre-nos .card-result .card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinha o conteúdo verticalmente */
+  align-items: center;     /* Alinha o conteúdo horizontalmente */
+  text-align: center; 
+  
+}
+.sobre-nos .card-result .f{
+font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+  .sobre-nos.title,.sobre-nos .pos-title {
+      text-align: center;
+      color: white;
+  }
+
+  .sobre-nos .card{
+      width: 100%;
+      margin: auto;
+      text-align: center;
+  }
+  .sobre-nos .card .text-primary {
+      text-align: center;
+  }
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-shadow: 0 0 0 #000; /* Cor do círculo */
+
+}
+
+.partner-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.partner-subtitle {
+  font-size: 1.1rem;
+  color: #ffffff;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.image-wrapper {
+  position: relative;
+  max-width: 100%;
+}
+
+.office-img {
+  width: 100%;
+  border-radius: 10px;
+  /*box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);*/
+}
+
+.stats-section {
+  margin-top: 3rem;
+}
+
+.stat-box {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-10px);
+}
+
+.stat-value {
+  font-size: 2rem;
+  color: #2194f3;
+  font-weight: 700;
+}
+
+.stat-desc {
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .partner-title {
+    font-size: 1.75rem;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+
+  .stat-desc {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .stat-box {
+    padding: 1.5rem;
+  }
+
+  .stats-section .col-6 {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+}

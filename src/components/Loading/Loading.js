@@ -1,11 +1,12 @@
-// src/components/Loading.js
 import React from 'react';
-import './Loading.css'; // Adicione estilos se necessário
+import './Loading.css';
+import conob from '../../assets/Abstratos/faviconCengrenagem.png';
 
 const Loading = () => {
   return (
-    <div className="loading">
-      <p>Loading...</p>
+    <div className="loading-container">
+      <div className="spinner"><img src={conob} width={50}/> </div>
+      <p>Carregando...</p>
     </div>
   );
 };

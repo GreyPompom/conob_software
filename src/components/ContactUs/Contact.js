@@ -20,12 +20,12 @@ function ContactUs() {
     return (
         <div className="contact-us container-fluid bg-dark text-white py-4 rounded-top">
             <div className="container">
-                <h2 className="text-center mb-3">Entre em Contato</h2>
+                <h2 className="title text-center mb-3">Entre em Contato</h2>
                 <div className="row px-2 px-sm-5 justify-content-center">
                     {/* Contact Info */}
                     <div className="col-md-5 mb-4 text-start p-4">
                         <h3 className='mb-2'>Com um clique</h3>
-                        <p>
+                        <p class="text-white">
                             Tem interesse em saber mais sobre nossas soluções ou deseja discutir um projeto específico? Nossa equipe está pronta para ajudar! Entre em contato conosco preenchendo o formulário.
                         </p>
                         <div className="adress mb-4 border-bottom">
@@ -37,17 +37,15 @@ function ContactUs() {
                                 <i className="bi bi-telephone-fill me-3 fs-4 text-primary"></i>
                                 <span>+55 48 9 91810384</span>
                             </div>
-                            <div className="d-flex align-items-center">
+                            <div className="d-flex align-items-center mb-3">
                                 <i className="bi bi-envelope-fill me-3 fs-4 text-primary"></i>
                                 <span>contato@conob.com.br</span>
                             </div>
-                        </div>
-                        <div>
-                            <h5>Siga-nos nas redes sociais</h5>
-                            <div className="d-flex gap-3">
-                                <a href='https://www.instagram.com/conob_software'>
-                                    <i className="bi bi-instagram fs-3"></i>
-                                </a>
+                            <div className="d-flex align-items-center mb-3">
+                                <i className="bi bi-instagram me-3 fs-4 text-primary"></i>
+                                <span><a href='https://www.instagram.com/conob_software'>
+                                    conob_software
+                                </a> </span>
                             </div>
                         </div>
                     </div>

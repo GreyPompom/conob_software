@@ -201,10 +201,12 @@
   @media (max-width: 768px){
     .lampada{
         left: -130%;
+        display: none;
         top: -48px;
       }
       .ondinha{
         left: 120px;
         top: -60px;
+        display: none;
       }
   }

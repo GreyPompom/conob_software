@@ -4,15 +4,15 @@ import { Carousel } from 'react-bootstrap';
 import { useSwipeable } from 'react-swipeable';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AOS from 'aos';
-import imagem_lampada from '../../assets/abstratos/lampada_engrenagem.png';
-import imagem_ondinha from '../../assets/abstratos/ondinha.png';
-import imagem_conob_web from '../../assets/abstratos/conob_web.png';
+import imagem_lampada from '../../assets/Abstratos/lampada_engrenagem.png';
+import imagem_ondinha from '../../assets/Abstratos/ondinha.png';
+import imagem_conob_web from '../../assets/Abstratos/conob_web.png';
 import 'aos/dist/aos.css';
 
 const PointCard = ({ number, title, description }) => (
-    <div className="col-lg-3 position-relative py-3 py-md-5 ">
+    <div className="col-lg-3 position-relative py-3 py-md-5 "data-aos="zoom-in-up">
         <h1 className="numero">{number}</h1>
-        <div className="box-blue" data-aos="fade-up">
+        <div className="box-blue" >
             <h2 className="fw-semibold mt-3">{title}</h2>
             <p>{description}</p>
             <div className="botao-contact d-grid gap-2 d-md-flex justify-content-center">
@@ -68,16 +68,16 @@ function ThreePoints() {
             <div className="text-center text-secondary">
                 <div className="container py-3">
                     <h1 className="sis text-primary">Por que a trabalhar com a Conob</h1>
-                    <p className="col-lg-12 mx-auto p-2 p-lg-0">
+                    <p className="col-lg-12 mx-auto p-2 p-lg-0 lead ">
                         Na Conob, cada projeto é desenvolvido com foco no cliente. Oferecemos um atendimento especializado que respeita as necessidades únicas de cada parceiro, criando soluções sob medida para garantir resultados eficientes.
                     </p>
                 </div>
             </div>
             <div class="position-absolute end-0 p-3 ">
-                <img src={imagem_lampada} class="position-absolute lampada spin" alt="triangulos 1 azul e 1 branco" width="70" height="70" loading="lazy"></img>
+                <img src={imagem_lampada} class="position-absolute lampada " alt="triangulos 1 azul e 1 branco" width="70" height="70" loading="lazy"></img>
             </div>
             <div class="position-absolute start-0 p-3 ">
-                <img src={imagem_conob_web} class="position-absolute ondinha " alt="triangulos 1 azul e 1 branco" width="70" height="70" loading="lazy"></img>
+                <img src={imagem_conob_web} class="position-absolute ondinha spin" alt="triangulos 1 azul e 1 branco" width="70" height="70" loading="lazy"></img>
             </div>
 
             {/* Desktop View */}

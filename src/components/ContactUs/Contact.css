@@ -17,3 +17,32 @@
     font-size: 11px;
     display: inline-block;
 }
+
+a{
+    text-decoration:none;
+    color: white 
+}
+
+.page .contact-us{
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    align-content: space-evenly;
+    justify-items: center;
+}
+
+.page .contact-us .title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.text-white{
+    color: white;
+}
+
+.contact-us{
+        min-height: 90vh;
+        align-content: center ;
+
+}

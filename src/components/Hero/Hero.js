@@ -2,16 +2,16 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import manHero from '../../assets/Hero/hero_img_15_1.png';
-import pontinhos from '../../assets/abstratos/pontilhados.png';
-import circulo from '../../assets/abstratos/circulo-azul.png';
-import manchaazul from '../../assets/abstratos/mancha-azul-abstrata.png';
-import triangulo from '../../assets/abstratos/triangulos-branco-azul-pequenos.png';
-import setaTorta from '../../assets/abstratos/seta-torta.png';
+import pontinhos from '../../assets/Abstratos/pontilhados.png';
+import circulo from '../../assets/Abstratos/circulo-azul.png';
+import manchaazul from '../../assets/Abstratos/mancha-azul-abstrata.png';
+import triangulo from '../../assets/Abstratos/triangulos-branco-azul-pequenos.png';
+import setaTorta from '../../assets/Abstratos/seta-torta.png';
 import './Hero.css';
 
 function Hero() {
     return (
-        <div class="hero">
+        <div class="parallax hero ">
             <div id="myCarousel" class=" carousel slide mb-6 position-relative" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

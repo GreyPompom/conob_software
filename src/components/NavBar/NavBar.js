@@ -28,10 +28,10 @@ function NavBar() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg backdrop-blur-sm bg-white fixed-top shadow-sm">
+      <nav className="navbar navbar-expand-lg backdrop-blur-sm bg-white fixed-top shadow-sm text-sm-start">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            <img src={logo} alt="Logo" className="logo-navbar" />
+            <img src={logo} alt="Logo" className="logo-navbar" loading='lazy' width={120}/>
           </a>
           <button
             className="navbar-toggler"
@@ -58,13 +58,30 @@ function NavBar() {
               </li>
               <li className="nav-item">
                 <NavLink
-                  to="/pagina"
-                  className={`nav-link custom-active ${location.pathname === '/pagina' ? 'active' : ''}`}
-                  aria-current={location.pathname === '/pagina' ? 'page' : undefined}
+                  to="/perguntas-frequentes"
+                  className={`nav-link custom-active ${location.pathname === '/perguntas-frequentes' ? 'active' : ''}`}
+                  aria-current={location.pathname === '/perguntas-frequentes' ? 'page' : undefined}
                 >
-                  Pagina
+                  FAQ
                 </NavLink>
               </li>
+              {/* <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle custom-active"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Página
+                </a>
+                <ul className="dropdown-menu shadow-sm" aria-labelledby="navbarDropdown">
+                  <li><NavLink className="dropdown-item" to="/pagina1">Página 1</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/pagina2">Página 2</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/pagina3">Página 3</NavLink></li>
+                </ul>
+              </li> */}
               <li className="nav-item">
                 <NavLink
                   to="/sistemas"

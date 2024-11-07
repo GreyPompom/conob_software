@@ -1,23 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import './App.css';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/Home/Home';
-import ContactUs from './components/ContactUs/page-contact';
-import PageFrequentlyQuestions from './components/FrequentlyQuestions/page-frequently-questions';
-import About from './components/AboutUs/page-aboutUs';
-import Softwares from './components/NossosSoftwares/page-nossosSoftwares';
-import Politica from './components/Politica/Politica';
-import Page404 from './components/404/404';
+import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import Loading from './components/Loading/Loading';
+import ScrollToTop from './components/ScrollToTop';
+import Footer from './components/Footer/footer';
+
+// Lazy loading dos componentes
+const Home = lazy(() => import('./components/Home/Home'));
+const ContactUs = lazy(() => import('./components/ContactUs/page-contact'));
+const PageFrequentlyQuestions = lazy(() => import('./components/FrequentlyQuestions/page-frequently-questions'));
+const About = lazy(() => import('./components/AboutUs/page-aboutUs'));
+const Softwares = lazy(() => import('./components/Softwares/page-nossosSoftwares'));
+const Politica = lazy(() => import('./components/Politica/Politica'));
+const Page404 = lazy(() => import('./components/404/404'));
+
 
 function App() {
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simule o carregamento da página
+    // Simule o carregamento da página inicial
     const timer = setTimeout(() => {
       setLoading(false);
     }, 2000); // Ajuste o tempo de carregamento conforme necessário
@@ -25,20 +28,25 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  if (loading) {
+    return <Loading />; 
+  }
+
   return (
     <div className='App'>
-     <React.StrictMode>
-      <Routes>
-         <Route path="/" element={<Home />} />
-         <Route path="/entre-contato" element={<ContactUs />} />
-         <Route path="/perguntas-frequentes" element={<PageFrequentlyQuestions />} />
-        <Route path="/sistemas" element={<Softwares />} />
-        <Route path="/sobre-nos" element={<About />}/>
-        <Route path="/politica" element={<Politica />} /> 
-        <Route path="*" element={<Page404 />} />
-      </Routes>
-    </React.StrictMode>
-    <scrollToTop/>
+      <ScrollToTop />
+      <Suspense fallback={<Loading />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/entre-contato" element={<ContactUs />} />
+          <Route path="/perguntas-frequentes" element={<PageFrequentlyQuestions />} />
+          <Route path="/sistemas" element={<Softwares />} />
+          <Route path="/sobre-nos" element={<About />} />
+          <Route path="/politica" element={<Politica />} />
+          <Route path="*" element={<Page404 />} />
+        </Routes>
+      </Suspense>
+      <Footer />
     </div>
   );
 }

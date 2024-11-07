@@ -1,24 +1,34 @@
 import ContructionImage from '../../assets/Contruction-amico.png';
+import './AboutUs.css'; // External CSS for custom styles
+import React, { useState, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import SobreNos from './SobreNos';
+import Timeline from '../TimeLine/TimeLine'; 
+import BoxAboutUs from '../Boxes/Box-AboutUs';
 
-function PageAbouUs () {
+function PageAbouUs() {
+    // Componente para exibir cada estatística
+
     return (
 
-        <div class="container vh-100 d-flex justify-content-center align-items-center">
-        <div class="row">
-            <div class="col-md-12 text-center">
-            <img src={ContructionImage} alt="Imagem de exemplo" width={200}/>
-           <h2>Pagina em construção</h2>
-            
-                <p>A pagina sobre nos está em construção.
-                    Clique no botão abaixo para voltar á home
-                </p>
-                <a href='/'>
-                     <button class="btn btn-primary" >HOME</button>
-                </a>
-               
+
+        <section className="page sobre-nos-section py-5"  data-aos="fade-up">
+            <div className="container">
+                <div className="text-center mb-5 ">
+                    <h1 className=" sis text-secondary ">Sobre nós</h1>
+                    <p className="subtitle">
+                    A Conob nasceu da transição de CLF para PJ, incentivada por um grande parceiro para expandir e aprimorar a gestão do departamento de TI. Em parceria com uma associação, desenvolvemos o projeto MTR, uma aplicação de controle de transporte de resíduos que opera em várias unidades da federação e no governo federal. Essa parceria nos permitiu explorar o setor de resíduos e impulsionar a criação de um ERP especializado na destinação de resíduos.
+                    </p>
+                </div>
+                
             </div>
-        </div>
-    </div>
+            <SobreNos/>
+            <Timeline/>
+            <BoxAboutUs/>
+
+        </section>
+
+
     )
 }
 

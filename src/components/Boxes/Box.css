@@ -1,0 +1,125 @@
+.blue-opaco{
+    background: linear-gradient(90deg, #449bf86b, #ebf5ff);
+}
+
+
+.box-contact-us,.box-frequently-questions {
+    position: relative;
+    overflow: hidden; 
+}
+.box-contact-us h1, .box-frequently-questions h1 {
+    font-size: 3em;
+}
+
+.box-contact-us .mancha {
+    left: 300px;
+    top: 90px;
+    width: 350px;
+    height: 350px;
+    z-index: 2;
+}
+
+.box-contact-us .triangulo {
+    left: 1150px;
+    top: 150px;
+    z-index: 2;
+}
+
+.box-contact-us .triangulo-2 {
+    left: 650px;
+    top: 25px;
+    z-index: 2;
+}
+
+/* Box.css */
+
+.box-about-us {
+    position: relative;
+    background: #449bf85d; /* Fundo azul claro para suavidade */
+    padding: 4rem 2rem;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.box-about-us .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: #0056b3; /* Azul mais escuro para o título */
+}
+@media (max-width: 768px) {
+    .box-about-us .mancha, .box-about-us .triangulo, .box-about-us .triangulo-2, .box-contact-us .mancha, .box-contact-us .triangulo, .box-contact-us .triangulo-2, .box-frequently-questions .mancha, .box-frequently-questions .triangulo, .box-frequently-questions .triangulo-2 {
+       display:none;
+    }
+    
+}
+#circulo {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff; /* Azul vibrante */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#circulo h2 {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+}
+
+.box-about-us p {
+    font-size: 1rem;
+    color: #333; /* Texto escuro e legível */
+    margin-bottom: 1.5rem;
+}
+
+.triangulo {
+    animation: spin 10s infinite linear;
+    opacity: 0.8;
+}
+
+.triangulo-2 {
+    animation: spin 15s infinite linear reverse;
+    opacity: 0.6;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .box-about-us {
+        padding: 2rem;
+    }
+    
+    .box-about-us .title {
+        font-size: 2rem;
+    }
+
+    #circulo {
+        width: 80px;
+        height: 80px;
+    }
+
+    #circulo h2 {
+        font-size: 1rem;
+    }
+}
+
+
+.box-frequently-questions .triangulo-2 {
+    left: 650px;
+    top: 156px;
+    z-index: 2;
+}
