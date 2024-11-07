@@ -1,9 +1,11 @@
+import BoxContactUs from "../Boxes/Box-ContatUs";
 import FrequentlyQuestions from "../FrequentlyQuestions/Frequentlyquestions";
 
 function PageContact () {
     return (
-        <div class="mt-5 ">
+        <div class="page mt-5 "  data-aos="fade-up">
         <FrequentlyQuestions/>
+        <BoxContactUs/>
         </div>
 
     )

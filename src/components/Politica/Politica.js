@@ -2,7 +2,7 @@
 import './Politica.css';
 function Politica() {
     return (
-        <div className="container">
+        <div className="container "  data-aos="fade-up">
             <div id="politica-privacidade">
                 <div class="my-5">
                     <div class="p- text-center text-secondary">

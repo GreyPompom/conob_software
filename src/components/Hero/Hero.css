@@ -22,6 +22,7 @@
     height: 80vh;
 }
 
+
 .pontinhos {
     z-index: 1;
     top: 45%;
@@ -270,7 +271,15 @@
         height: 155px;
     }
 }
-
+@media (min-width: 1367px) {
+    .hero .carousel-item .row {
+        padding: 0 10%;
+    }
+    .title-hero {
+        font-size: 3.5rem;
+        max-width: 100%;
+    }
+}
 
 @keyframes movingX {
     0% {
@@ -326,3 +335,17 @@
         transform: rotate(360deg);
     }
 }
+
+.parallax {
+    /* The image used */
+    background-color: white;
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

@@ -17,8 +17,6 @@ root.render(
     <NavBar />
     <App />
     </Router>
-    <Footer/>
-    <ScrollToTop/>
   </React.StrictMode>
 );
 

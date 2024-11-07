@@ -2,7 +2,7 @@ import logo from '../../assets/logo/logo_conob_zoom.png';
 import './footer.css';
 function footer() {
   return (
-      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5  border-top bg-dark text-white">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5  border-top bg-dark text-white text-start">
         <div class="col mb-3">
         <a className="navbar-brand " href="#">
             <img src={logo} alt="Logo" className="logo-navbar" />

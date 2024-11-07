@@ -3,9 +3,13 @@
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(6,113,224,0.69) 36%, rgba(18,120,225,0.69) 67%, rgba(255,255,255,1) 100%);
 
 }
-
+.results-section{
+    min-height: 90vh;
+    align-content: center ;
+}
 .card-result{
     width: 30%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 @media (max-width: 768px) {
     .card-result{

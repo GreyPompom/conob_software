@@ -1,6 +1,6 @@
-.gradient-blue{
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(6,113,224,0.69) 36%, rgba(18,120,225,0.69) 67%, rgba(255,255,255,1) 100%);
+.gradient-blue {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(6, 113, 224, 0.69) 36%, rgba(18, 120, 225, 0.69) 67%, rgba(255, 255, 255, 1) 100%);
 
 }
 
@@ -122,4 +122,40 @@
 .image img {
     max-width: 100%;
     border-radius: 10px;
+}
+
+
+.hero-software .carousel-control-next,
+.hero-software .carousel-control-prev {
+    color: grey;
+}
+.hero-software .carousel-control-next-icon {
+    background-image: url('../../assets/icons/seta-direita-azul.png') !important;
+}
+.hero-software  .carousel-control-prev-icon {
+    background-image: url('../../assets/icons/seta-esquerda-azul.png') !important;
+}
+
+@media(min-width: 1024px) {
+    .software-details-box {
+        margin: 20vh 0;
+        align-content: space-around;
+    }
+}
+
+.nossos-softwares {
+    min-height: 100vh;
+    align-content: center;
+}
+
+@media(max-width: 1024px) {
+    .hero-software {
+        margin: 10vh 0;
+        
+    }
+
+    .hero-software .carousel-control-next,
+.hero-software .carousel-control-prev {
+    display: none;
+}
 }

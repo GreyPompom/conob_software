@@ -1,3 +1,4 @@
+
 @media (min-width: 992px) {
   .frequently-questions {
     padding: 0 5.2vw;
@@ -63,4 +64,16 @@ button[aria-expanded="true"] .icon {
 
 .bi-chevron-down {
   transition: transform 0.3s ease;
+}
+
+.page .frequently-questions {
+  min-height: 100vh;display: grid;
+  align-items: center;
+  align-content: space-evenly;
+  justify-items: center;
+}
+
+.frequently-questions {
+    min-height: 90vh;
+    align-content: center ;
 }

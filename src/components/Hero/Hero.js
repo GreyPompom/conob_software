@@ -11,7 +11,7 @@ import './Hero.css';
 
 function Hero() {
     return (
-        <div class="hero">
+        <div class="parallax hero ">
             <div id="myCarousel" class=" carousel slide mb-6 position-relative" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
