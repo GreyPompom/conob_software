@@ -1,6 +1,6 @@
 import React from 'react';
 import './Loading.css';
-import conob from '../../assets/Abstratos/conob_engrenagem.png';
+import conob from '../../assets/conob_engrenagem.png';
 
 
 const Loading = () => {
