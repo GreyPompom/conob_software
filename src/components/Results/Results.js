@@ -44,13 +44,13 @@ const ResultsSection = () => {
                 <div className="row " data-aos="zoom-in">
                     {/* Imagem */}
                     <div className="col-md-4 mb-4 mb-md-0 image-animation">
-                        <img src={serverImage} alt="Technology Illustration" className="img-fluid" />
+                        <img src={serverImage} alt="Technology Illustration" className="img-fluid" loading='lazy'/>
                     </div>
 
                     {/* Texto e Estatísticas */}
                     <div className="col-md-8 text-start">
-                        <h1 className="title mb-4 ">Resultados que Geram Confiança</h1>
-                        <p className="pos-title mb-5 ">
+                        <h1 className="title mb-4  text-primary ">Resultados que geram Confiança</h1>
+                        <p className="pos-title mb-5 text-white">
                         Desenvolvemos soluções robustas e seguras que fortaleceram a confiança de nossos clientes, impulsionando a eficiência operacional e a satisfação com resultados consistentes e de alta qualidade.
                         </p>
                         <div className="row  row-cards text-primary">

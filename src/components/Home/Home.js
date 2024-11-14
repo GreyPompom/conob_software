@@ -8,7 +8,7 @@ import ResultsSection from "../Results/Results";
 function Home () {
   return (
     <main>
-        <div className="Home" >
+        <div className="Home"  data-aos="fade-up">
           <Hero />
           <ThreePoints/>
           <NossosSoftwares />

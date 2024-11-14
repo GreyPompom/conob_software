@@ -13,6 +13,11 @@ body {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+@media (min-width: 2000px) {
+  body {
+    zoom: 1.2; /* Aplica um zoom de 20% */
+  }
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

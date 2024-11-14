@@ -17,7 +17,7 @@ function BoxContactUs() {
                         </div>
                     </div>
                     <div class="col-lg-6 ">
-                        <img src={image_faq} width={300} height={300} />
+                        <img src={image_faq} width={300} height={300} loading='lazy' />
                     </div>
                     <div class="position-absolute center p-3 ">
                         <img src={manchaazul} class="position-absolute mancha" alt="mancha azul" width="320" height="320" loading="lazy"></img>

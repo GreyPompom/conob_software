@@ -58,6 +58,7 @@ function SobreNos() {
                             <img
                                 src={imageSobre}
                                 className="img-fluid office-img"
+                                loading='lazy'
                             />
                         </div>
                     </div>
