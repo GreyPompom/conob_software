@@ -24,7 +24,7 @@ function NossosSoftwares() {
                     <button class="btn btn-primary mt-3">Mais informações</button>
                 </div>
                 <div class="image ms-auto">
-                    <img src="https://via.placeholder.com/400" alt="Software Image" class="img-fluid rounded"/>
+                    <img src="https://via.placeholder.com/400" alt="Software Image" class="img-fluid rounded" loading='lazy'/>
                 </div>
             </div>
         </div>

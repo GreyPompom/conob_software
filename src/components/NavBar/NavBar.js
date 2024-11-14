@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavLink, useLocation } from 'react-router-dom';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import logo from '../../assets/logo/logo_conob_zoom.png';
+import logo from '../../assets/logo/LOGO - CONOB_Prancheta_zoom-800.png';
 import './NavBar.css';
 
 function NavBar() {
@@ -45,7 +45,7 @@ function NavBar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent" ref={navRef}>
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 text-start">
               <li className="nav-item">
                 <NavLink
                   exact

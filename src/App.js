@@ -34,8 +34,11 @@ function App() {
 
   return (
     <div className='App'>
-      <ScrollToTop />
+     
+      
       <Suspense fallback={<Loading />}>
+        <NavBar/> 
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/entre-contato" element={<ContactUs />} />
@@ -45,8 +48,9 @@ function App() {
           <Route path="/politica" element={<Politica />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
+      <Footer />  
       </Suspense>
-      <Footer />
+      
     </div>
   );
 }

@@ -5,7 +5,7 @@
 }
 
 .sobre-nos.gradient-blue {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(6, 111, 224, 0.637) 36%, rgba(18, 121, 225, 0.466) 67%, rgba(255, 255, 255, 0.726) 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(57, 144, 236, 0.637) 36%, rgba(18, 121, 225, 0.466) 67%, rgba(255, 255, 255, 0.726) 100%);
 }
 
 .sobre-nos .card-result .card-body{
@@ -21,24 +21,6 @@ font-size: 16px;
 }
 
 
-@media (max-width: 768px) {
-  .sobre-nos .title,.sobre-nos .pos-title {
-      text-align: center;
-      color: white;
-  }
-
-  .sobre-nos .card{
-      width: 100%;
-      margin: auto;
-      text-align: center;
-  }
-  .sobre-nos .card .text-primary {
-      text-align: center;
-  }
-  .sobre-nos{
-    margin-top: 25vh;
-  }
-}
 .title {
   font-size: 2.5rem;
   font-weight: 700;
@@ -106,8 +88,29 @@ font-size: 16px;
   font-size: 1rem;
   color: #666;
 }
-
+@media (max-width: 1024px) {
+  .sobre-nos-section {
+      margin: 10vh 0;
+  }
+}
 @media (max-width: 768px) {
+  .sobre-nos .title,.sobre-nos .pos-title {
+      text-align: center;
+      color: white;
+  }
+
+  .sobre-nos .card{
+      width: 100%;
+      margin: auto;
+      text-align: center;
+  }
+  .sobre-nos .card .text-primary {
+      text-align: center;
+  }
+  .sobre-nos{
+    margin-top: 25vh;
+  }
+
   .title {
     font-size: 2rem;
   }
@@ -124,7 +127,6 @@ font-size: 16px;
     font-size: 0.9rem;
   }
 }
-
 @media (max-width: 576px) {
   .stat-box {
     padding: 1.5rem;

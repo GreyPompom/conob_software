@@ -31,10 +31,10 @@ const Timeline = () => {
 
   // Função para controlar a animação da linha conforme o scroll
   const handleScroll = () => {
-    const maxHeight = document.documentElement.scrollHeight - window.innerHeight - 10;
-    const scrollTop = window.scrollY - 10;
+    const maxHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollTop = window.scrollY;
     const percentageScrolled = (scrollTop / maxHeight) * 100;
-    setLineHeight(Math.min(percentageScrolled, 100));
+    setLineHeight(Math.min(percentageScrolled+5, 100));
   };
 
   useEffect(() => {
@@ -64,14 +64,14 @@ const Timeline = () => {
                   {index % 2 === 0 ? (
                     <>
                       <div className="col-md-6 order-md-1 order-2">
-                        <div className="content">
-                          <h3>{item.year}</h3>
+                        <div className="content d-grid text-end">
+                          <h3 className=' '>{item.year}</h3>
                           <p>{item.description}</p>
                         </div>
                       </div>
                       <div className="col-md-6 order-md-2 order-1">
                         <div className="image-container" >
-                          <img src={item.imgSrc} alt={item.year} className="img-fluid rounded" />
+                          <img src={item.imgSrc} alt={item.year} className="img-fluid rounded" loading='lazy'/>
                         </div>
                       </div>
                     </>
@@ -79,12 +79,12 @@ const Timeline = () => {
                     <>
                       <div className="col-md-6">
                         <div className="image-container">
-                          <img src={item.imgSrc} alt={item.year} className="img-fluid rounded" />
+                          <img src={item.imgSrc} alt={item.year} className="img-fluid rounded" loading='lazy'/>
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <div className="content">
-                          <h3>{item.year}</h3>
+                        <div className="content d-grid text-start">
+                          <h3 className=''>{item.year}</h3>
                           <p>{item.description}</p>
                         </div>
                       </div>

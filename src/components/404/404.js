@@ -4,7 +4,7 @@ function page404() {
         <div class="container vh-100 d-flex justify-content-center align-items-center">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <img src={image404} alt="404" width={300}/>
+                    <img src={image404} alt="404" width={300}loading='lazy'/>
                     <h2>UH OH! You're lost.</h2>
                     <p>The page you are looking for does not exist.
                         How you got here is a mystery. But you can click the button below

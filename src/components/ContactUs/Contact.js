@@ -24,7 +24,7 @@ function ContactUs() {
                 <div className="row px-2 px-sm-5 justify-content-center">
                     {/* Contact Info */}
                     <div className="col-md-5 mb-4 text-start p-4">
-                        <h3 className='mb-2'>Com um clique</h3>
+                        <h3 className='mb-2 text-white'>Com um clique</h3>
                         <p class="text-white">
                             Tem interesse em saber mais sobre nossas soluções ou deseja discutir um projeto específico? Nossa equipe está pronta para ajudar! Entre em contato conosco preenchendo o formulário.
                         </p>
@@ -53,7 +53,7 @@ function ContactUs() {
                     {/* Contact Form */}
                     <div className="container-form-email col-md-5">
                         <div className="card p-4 shadow-lg">
-                            <h3 className="mb-1 text-start">Mande uma mensagem</h3>
+                            <h3 className="mb-1 text-start text-black">Mande uma mensagem</h3>
                             <form onSubmit={handleSubmit}>
                                 <div className="mb-1">
                                     <label htmlFor="name" className="form-label"></label>

@@ -62,7 +62,7 @@ function NossaEstrutura() {
                         <div class="card-body">
                             <div class="icon-container mb-3">
                                 <div class="icon-background">
-                                    <img src={logo} alt="" class="img-fluid icon-struct" width={200} height={200} />
+                                    <img src={logo} alt="" class="img-fluid icon-struct" width={200} height={200} loading='lazy'/>
                                 </div>
                             </div>
                             <h5 class="card-title">Sobre nós</h5>

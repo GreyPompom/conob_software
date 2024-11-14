@@ -45,3 +45,7 @@
     }
   }
   
+
+.gradient-title-blue{
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(110, 178, 250, 0.637) 36%, rgba(18, 121, 225, 0.466) 67%, rgba(255, 255, 255, 0.726) 100%);
+}

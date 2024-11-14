@@ -21,33 +21,22 @@ function BoxAboutUs() {
 
     return (
         <div className="box-about-us blue-opaco py-5">
-            <div className="container">
-                <div className="row align-items-center">
-                    
-                    <div className="col-lg-12">
-                        <h1 className="title text-primary text-start">
-                            Seguimos princípios. <br />
-                            Nossa missão e visão
-                        </h1>
+            <div className="container py-5" >
+      <div className="text-center mb-5">
+        <h2 className="text-primary">Seguimos princípios.<br />Nossa missão e visão</h2>
+      </div>
 
-                        {values.map((value, index) => (
-                            <div key={index} className="mb-4">
-                                <div id='circulo'>
-                                    <h2>{value.title}</h2>
-                                </div>
-                                <p>{value.text}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                <div className="position-absolute end-0 p-3">
-                    <img src={triangulo} className="position-absolute triangulo spin" alt="triangulos azul e branco" width="50" height="50" loading="lazy" />
-                </div>
-                <div className="position-absolute end-0 p-3">
-                    <img src={triangulo} className="position-absolute triangulo-2 spin" alt="triangulos azul e branco" width="50" height="50" loading="lazy" />
-                </div>
+      <div className="row justify-content-center">
+        {values.map((value, index) => (
+          <div key={index} className="col-lg-3 col-md-4 col-sm-6 text-center mb-4">
+            <div className="circle bg-primary text-white mx-auto mb-3 d-flex align-items-center justify-content-center" style={{ width: '80px', height: '80px', borderRadius: '50%' }}>
+              <strong>{value.title}</strong>
             </div>
+            <p>{value.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
         </div>
     );
 }

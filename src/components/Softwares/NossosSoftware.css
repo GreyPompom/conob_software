@@ -136,6 +136,13 @@
     background-image: url('../../assets/icons/seta-esquerda-azul.png') !important;
 }
 
+.softwares-box .carousel-control-next-icon {
+    background-image: url('../../assets/icons/seta-direita-azul.png') !important;
+}
+.softwares-box   .carousel-control-prev-icon {
+    background-image: url('../../assets/icons/seta-esquerda-azul.png') !important;
+}
+
 @media(min-width: 1024px) {
     .software-details-box {
         margin: 20vh 0;
