@@ -3,7 +3,7 @@ import './Politica.css';
 function Politica() {
     return (
         <div className="container "  data-aos="fade-up">
-            <div id="politica-privacidade">
+            <div id="politica-privacidade" className='py-5'>
                 <div class="my-5">
                     <div class="p- text-center text-secondary">
                         <div class="container py-5">
@@ -47,7 +47,7 @@ function Politica() {
                     </div>
                 </div>
             </div>
-            <div id="termos-servico">
+            <div id="termos-servico" className='py-5'>
                 <div class="my-5">
                     <div class="p- text-center text-secondary ">
                         <div class="container py-5">

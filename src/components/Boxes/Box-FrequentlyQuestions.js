@@ -4,7 +4,7 @@ import triangulo from '../../assets/abstratos/triangulos-branco-azul-pequenos.pn
 import './Box.css';
 function BoxFrequentlyQuestions() {
     return (
-        <div class="box-frequently-questions blue-opaco py-5 ps-sm-5 pe-sm-5">
+        <div class="box-frequently-questions gradient-blue py-5 ps-sm-5 pe-sm-5">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 ">

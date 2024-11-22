@@ -17,11 +17,11 @@ function footer() {
         <div class="col mb-3 ">
           <h5>Empresa</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Estrutura</a></li>
+           <li class="nav-item mb-2"><a href="/home" class="nav-link p-0 text-white">Home</a></li>
             <li class="nav-item mb-2"><a href="/sobre-nos" class="nav-link p-0 text-white">Sobre nós</a></li>
             <li class="nav-item mb-2"><a href="/sistemas" class="nav-link p-0 text-white">Nossos sistemas</a></li>
             <li class="nav-item mb-2"><a href="/entre-contato" class="nav-link p-0 text-white">Entre em contato</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Trabalhe conosco</a></li>
+           
           </ul>
         </div>
 

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Carousel, Button } from 'react-bootstrap';
 import { System } from '@testing-library/user-event/dist/cjs/system/index.js';
 
-const SistemModule = ({ name, systems, description }) => {
+const SistemModule = ({ name, systems, description, id}) => {
 
   const [itemsToShow, setItemsToShow] = useState(1); // Estado para controlar quantos itens mostrar
 
@@ -29,7 +29,7 @@ const SistemModule = ({ name, systems, description }) => {
 
   const chunkedModules = chunkArray(systems, itemsToShow);
   return (
-    <div className="softwares-box container py-5">
+    <div className="softwares-box container py-5" id={id}>
        <h1 className="fw-bold text-primary">{name}</h1>
       <p className="mb-5">
       {description}
@@ -58,9 +58,9 @@ const SistemModule = ({ name, systems, description }) => {
         </Carousel.Item>
       ))}
     </Carousel>
-    <div>
+    <div className='px-sm-5'>
       {systems.map((system, index) => (
-        <div key={index}  className={`software-details-box row align-items-start  ${index % 2 === 0 ? '' : 'flex-row-reverse'}`} id={system.idclass}>
+        <div key={index}  className={`software-details-box row align-items-start py-5 p-3 px-sm-0 ${index % 2 === 0 ? '' : 'flex-row-reverse'}`} id={system.idclass}>
           <div className="col-md-6" >
             <img
               src={system.image}
@@ -81,7 +81,7 @@ const SistemModule = ({ name, systems, description }) => {
                 </li>
               ))}
             </ul>
-            <a href="/entre-contato" role="button"><button className="btn btn-primary mt-3">Solicite uma demonstração</button></a>
+            <a href="/entre-contato" role="button" target="_blank" ><button className="btn btn-primary mt-3">Solicite uma demonstração</button></a>
           </div>
         </div>
       ))}

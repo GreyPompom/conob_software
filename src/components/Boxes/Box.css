@@ -1,11 +1,14 @@
-.blue-opaco{
-    background: linear-gradient(90deg, #449bf86b, #ebf5ff);
+.gradient-blue{
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(76, 159, 247, 0.69) 36%, rgba(113, 164, 216, 0.69) 67%, rgba(255,255,255,1) 100%);
+
 }
 
 
 .box-contact-us,.box-frequently-questions {
     position: relative;
     overflow: hidden; 
+    min-height: 80vh;
+    margin-top:5%
 }
 .box-contact-us h1, .box-frequently-questions h1 {
     font-size: 3em;

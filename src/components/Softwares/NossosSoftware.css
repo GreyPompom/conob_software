@@ -11,13 +11,20 @@
 
 .nossos-softwares h1 {
     font-size: 2.5em;
-    color: #333;
+    color: #ffffff;
 }
 
-.nossos-softwares h1 .highlight {
-    color: #3f51b5;
-    border-bottom: 2px solid #3f51b5;
+.nossos-softwares h1 span {
+    border-bottom: 2px solid var(--bs-blue);
+    color:#fff
 }
+
+  .gradient-highlight {    
+    color: transparent;
+    position: relative;
+    display: inline-block;
+    padding:5px
+  }
 
 .software-section {
     display: flex;
@@ -52,7 +59,7 @@
 
 .menu-item:hover,
 .menu-item.active {
-    background: #3f51b5;
+    background: var(--bs-blue);
     color: #fff;
 }
 

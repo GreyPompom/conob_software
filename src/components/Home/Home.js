@@ -5,13 +5,14 @@ import ThreePoints from "../ThreePoints/ThreePoints";
 import FrequentlyQuestions from "../FrequentlyQuestions/Frequentlyquestions";
 import ContactUs from "../ContactUs/Contact";
 import ResultsSection from "../Results/Results";
+import {Sistemas} from "../../Dados/SofwaresDescription";
 function Home () {
   return (
     <main>
         <div className="Home"  data-aos="fade-up">
           <Hero />
           <ThreePoints/>
-          <NossosSoftwares />
+          <NossosSoftwares sistemas={Sistemas}/>
           <NossaEstrutura/>
           <ResultsSection/>
           <FrequentlyQuestions/>

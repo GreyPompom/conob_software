@@ -4,7 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import SobreNos from './SobreNos';
 import Timeline from '../TimeLine/TimeLine'; 
-import BoxAboutUs from '../Boxes/Box-AboutUs';
+import Valores from './Valores';
+import BoxContactUs from '../Boxes/Box-ContatUs';
 
 function PageAbouUs() {
     // Componente para exibir cada estatística
@@ -24,7 +25,8 @@ function PageAbouUs() {
             </div>
             <SobreNos/>
             <Timeline/>
-            <BoxAboutUs/>
+            <Valores/>
+            <BoxContactUs/>
 
         </section>
 

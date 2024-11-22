@@ -4,7 +4,7 @@ import triangulo from '../../assets/abstratos/triangulos-branco-azul-pequenos.pn
 import './Box.css';
 function BoxContactUs() {
     return (
-        <div class="box-contact-us blue-opaco py-5 ps-sm-3 pe-sm-3">
+        <div class="box-contact-us gradient-blue py-5 ps-sm-3 pe-sm-3">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 ">
