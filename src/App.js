@@ -3,8 +3,11 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import Loading from './components/Loading/Loading';
+import ScrollToTopButton from './components/ScrollToTop/ScrollToTop';
 import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer/footer';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 // Lazy loading dos componentes
 const Home = lazy(() => import('./components/Home/Home'));
@@ -40,6 +43,7 @@ function App() {
         <NavBar/> 
         <ScrollToTop />
         <Routes>
+          <Route path="/home" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/entre-contato" element={<ContactUs />} />
           <Route path="/perguntas-frequentes" element={<PageFrequentlyQuestions />} />
@@ -48,6 +52,7 @@ function App() {
           <Route path="/politica" element={<Politica />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
+        <ScrollToTopButton />
       <Footer />  
       </Suspense>
       

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './TimeLine.css';
 import defaultImage from '../../assets/default-image.png'; // Substitua pelo caminho real da imagem
-import logo from '../../assets/logo/logo_conob_zoom.png';
+import logo from '../../assets/logo/LOGO - CONOB_Prancheta_zoom-800.png';
 
 const Timeline = () => {
   const [lineHeight, setLineHeight] = useState(0);
@@ -34,7 +34,7 @@ const Timeline = () => {
     const maxHeight = document.documentElement.scrollHeight - window.innerHeight;
     const scrollTop = window.scrollY;
     const percentageScrolled = (scrollTop / maxHeight) * 100;
-    setLineHeight(Math.min(percentageScrolled+5, 100));
+    setLineHeight(Math.min(percentageScrolled, 100));
   };
 
   useEffect(() => {
@@ -44,9 +44,9 @@ const Timeline = () => {
 
   return (
     <div className="container my-5 p-5 " data-aos="zoom-in-up">
-      <h1 className="text-center text-primary mb-5">
+      <h1 className="text-center text-primary d-grid justify-content-center mb-5">
         Conheça a história 
-        <img src={logo} width={150} loading='lazy'>
+        <img src={logo} width={150} loading='lazy' className='mx-auto mt-2'>
       </img>
       
       </h1>

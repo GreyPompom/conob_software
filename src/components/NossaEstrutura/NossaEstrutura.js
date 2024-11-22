@@ -12,7 +12,7 @@ function NossaEstrutura() {
 
     return (
         <div class="we-struct container text-center py-5">
-            <h1 class=" text-primary" >Nossa estrutura</h1>
+            <h1 class=" text-primary" id='estrutura' >Nossa estrutura</h1>
             <p class="lead" >Conheça nossa estrutura dedicada a oferecer o melhor atendimento e suporte para nossos clientes.</p>
             <div class="position-absolute p-3 ">
                 <img src={manchaazul} class="position-absolute mancha" alt="mancha azul" width="320" height="320" loading="lazy"></img>

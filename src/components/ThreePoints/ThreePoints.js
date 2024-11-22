@@ -14,7 +14,7 @@ const PointCard = ({ number, title, description }) => (
         <h1 className="numero">{number}</h1>
         <div className="box-blue" >
             <h2 className="fw-semibold mt-3">{title}</h2>
-            <p>{description}</p>
+            <p className='text-light'>{description}</p>
             <div className="botao-contact d-grid gap-2 d-md-flex justify-content-center">
                 <a className="btn btn-primary rounded-pill" href="/entre-contato" role="button">
                     Entre em contato <i className="bi bi-arrow-right-short"></i>

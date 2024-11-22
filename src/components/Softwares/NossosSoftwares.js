@@ -1,36 +1,64 @@
-import './NossosSoftware.css' ;
+import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import './NossosSoftware.css'
 
-function NossosSoftwares() {
+// Dados dos sistemas recebidos como parâmetro
+const NossosSoftwares = ({ sistemas }) => {
+  // Filtrando apenas os sistemas com 'home: true'
+  const [activeSystem, setActiveSystem] = useState(
+    sistemas[0].systems.filter(system => system.home)[0] || null
+  );
+
   return (
-    <div className="nossos-softwares gradient-blue py-5"  >
-      <div class="container text-center py-5 d-grid" data-aos="fade-up">
-        <h1>Nossos <span class="highlight">Softwares</span></h1>
-        <div class="software-section row bg-white rounded shadow overflow-hidden mt-4 ">
-            <div class="menu col-lg-3 bg-light p-3 border-end">
-                <button class="menu-item btn btn-outline-primary w-100 mb-2 active">Financeiro</button>
-                <button class="menu-item btn btn-outline-primary w-100 mb-2">Estoque</button>
-                <button class="menu-item btn btn-outline-primary w-100 mb-2">Ecommerce</button>
-                <button class="menu-item btn btn-outline-primary w-100 mb-2">Vendas</button>
+    <div className="nossos-softwares gradient-blue py-5 " data-aos="fade-up" >
+      <div class="container text-center py-5 d-grid  rounded-pill" >
+        <h1 class="">Nossos <span class="gradient-highlight">Softwares</span></h1>
+        <div class="software-section row bg-white rounded shadow overflow-hidden mt-4 mx-1 mx-lg-5">
+          <div class="menu col-lg-3 bg-light p-3 border-end">
+            {sistemas.map((sistema) =>
+              sistema.systems
+                .filter((system) => system.home) // Filtra sistemas com home: true
+                .map((system) => (
+                  <button
+                    key={system.idclass}
+                    className={`menu-item btn btn-outline-primary btn-primary mb-2 w-100  ${activeSystem && activeSystem.idclass === system.idclass
+                      ? "active"
+                      : ""
+                      }`}
+                    onClick={() => setActiveSystem(system)}
+                  >
+                    {system.title}
+                  </button>
+                ))
+            )}
+            <a href="/sistemas" className=" btn btn-lithg mb-2 w-100  rounded-pill text-primary">
+              Ver todos os softwares
+            </a>
+          </div>
+          {activeSystem && (
+
+            <div class="content col-lg-12 d-flex flex-wrap-reverse p-4 text-start">
+              <div className=" col-12 col-lg-12">
+                <h2 className="">{activeSystem.title}</h2>
+                <p>
+                  {activeSystem.definitions.map((definition, idx) => (
+                    <li key={idx} className="d-flex align-items-start mb-2 text-start">
+                      <span className="text-primary me-2">&#10003;</span>
+                      <p className="mb-0">{definition}</p>
+                    </li>
+                  ))}
+                </p>
+                <a href="entre-contato" className="btn btn-primary mt-3" target="_blank" >Solicite uma demonstração</a>
+              </div>
+              {/* <div  className="col-12 col-lg-4 w-150 my-2">
+                <img className="rounded" src={activeSystem.image} width={200} />
+                </div> */}
             </div>
-            <div class="content col-lg-9 d-flex p-4">
-                <div class="details pe-4">
-                    <h2>Sistema Financeiro</h2>
-                    <p>QA engineers conduct various types of testing, including functional testing, regression testing, performance testing, and security testing.</p>
-                    <ul class="list-unstyled">
-                        <li>QA engineers</li>
-                        <li>QA engineers</li>
-                        <li>QA engineers</li>
-                    </ul>
-                    <button class="btn btn-primary mt-3">Mais informações</button>
-                </div>
-                <div class="image ms-auto">
-                    <img src="https://via.placeholder.com/400" alt="Software Image" class="img-fluid rounded" loading='lazy'/>
-                </div>
-            </div>
+          )}
         </div>
+      </div>
     </div>
-    </div>
+  );
+};
 
-  )};
-
-  export default NossosSoftwares;
+export default NossosSoftwares;
