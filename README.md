@@ -10,9 +10,6 @@
     <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXVyMjU3cWI5N2o5YWhmYmk0azR4dXp1ajM4bWthNGltbjJyaDNldSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zOvBKUUEERdNm/giphy.gif" width="400" alt="GIF 3">
 </p>
 
-
-
-
 ---
 
 ## **Índice**
@@ -21,6 +18,7 @@
 - [📦Instalação e Configuração](#instalação-e-configuração)
 - [📂Estrutura do Projeto](#estrutura-do-projeto)
 - [🌱Guia de Estilo](#guia-de-estilo)
+- [💾Configurar textos](#configurar-textos)
 - [🔌Publicação na HostGator](#publicação-na-hostgator)
 - [🤝Contribuição](#contribuição)
 - [👾Licença](#licença)
@@ -88,6 +86,22 @@ A estrutura principal do projeto é organizada como segue:
   - Priorize as classes do Bootstrap para layout e design.
   - Utilize CSS adicional somente quando necessário, em arquivos dentro de src/assets/css.
 
+
+---
+
+## **💾Configurar textos**
+
+ <img src="https://media.giphy.com/media/QdX8FM4rppAkM/giphy.gif?cid=790b761180g3wuufk9p26js5zaqvmnjj2lrfpkzltpw0kl0p&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="300" alt="GIF 3">
+ 
+### Ajustar Conteudos de texto(sistemas, cards, politicas, titulos) antes de subir a aplicação.
+ 1. Acessar pasta com arquivos de texto.
+ ````
+    src/
+      ├── Dados/         # Conteudos de texto
+````
+>2. Encontrar Local respectivo do texto desejado para alteração.
+
+> :warning: Não alterar a estrutura dos arquivos. 
 
 ---
 
