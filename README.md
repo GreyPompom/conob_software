@@ -6,9 +6,9 @@
 
 > **Descrição**  
 > Este projeto é uma landing page desenvolvida em **React.js** com **Bootstrap** para estilização. A landing page da Conob tem como objetivo apresentar e destacar os principais recursos e sistemas da plataforma, proporcionando uma visão geral clara e acessível aos usuários. Ela é organizada de forma a guiar o visitante por uma experiência intuitiva, com informações detalhadas sobre as funcionalidades e benefícios dos sistemas oferecidos.
-<p align="center">
-    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXVyMjU3cWI5N2o5YWhmYmk0azR4dXp1ajM4bWthNGltbjJyaDNldSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zOvBKUUEERdNm/giphy.gif" width="400" alt="GIF 3">
-</p>
+
+<img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXVyMjU3cWI5N2o5YWhmYmk0azR4dXp1ajM4bWthNGltbjJyaDNldSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zOvBKUUEERdNm/giphy.gif" width="400" alt="GIF 3">
+
 
 ---
 
@@ -108,6 +108,7 @@ A estrutura principal do projeto é organizada como segue:
 ## **🔌Publicação na HostGator**
 <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTZwZWhuZTlubGYwOTUxbDF2emN4dnA1eDllNTd5MHRsaHc3MjJjOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KAG54qcias64jAW1mb/giphy.gif" width="200" alt="GIF 3">
 
+### Aprenda a publicar nossa aplicação na HostGator
   1. Preparar os Arquivos para Produção:
 - Execute o comando para gerar os arquivos estáticos:
     ````
@@ -137,7 +138,10 @@ A estrutura principal do projeto é organizada como segue:
 ---
 
 ## **🤝Contribuição**
-Contribuições são bem-vindas! Siga as etapas abaixo para contribuir:
+
+ <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2JxZWRvanFtdW4xODI5ZngwZGJ0aHU2b3J6emtzMm1kdnFqdXphciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/gDPxwdP6SKFnsWDJ2u/giphy.gif" width="300" alt="GIF 3">
+
+###Contribuições são bem-vindas! Siga as etapas abaixo para contribuir:
 1. Faça um fork deste repositório.
 
 2. Crie uma branch com sua feature:
