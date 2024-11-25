@@ -141,7 +141,7 @@ A estrutura principal do projeto é organizada como segue:
 
  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2JxZWRvanFtdW4xODI5ZngwZGJ0aHU2b3J6emtzMm1kdnFqdXphciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/gDPxwdP6SKFnsWDJ2u/giphy.gif" width="300" alt="GIF 3">
 
-###Contribuições são bem-vindas! Siga as etapas abaixo para contribuir:
+### Contribuições são bem-vindas! Siga as etapas abaixo para contribuir:
 1. Faça um fork deste repositório.
 
 2. Crie uma branch com sua feature:
