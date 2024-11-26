@@ -19,6 +19,7 @@
 - [📂Estrutura do Projeto](#estrutura-do-projeto)
 - [🌱Guia de Estilo](#guia-de-estilo)
 - [💾Configurar textos](#configurar-textos)
+- [📧Configurar EmailJS](#configurar-emailjs)
 - [🔌Publicação na HostGator](#publicação-na-hostgator)
 - [🤝Contribuição](#contribuição)
 - [👾Licença](#licença)
@@ -104,6 +105,46 @@ A estrutura principal do projeto é organizada como segue:
 > :warning: Não alterar a estrutura dos arquivos. 
 
 ---
+
+## **📧Configurar EmailJS**
+
+ <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGprbG9zMXMwbGw1Mnk5M3R5a295dG13bnZiNzB1dDRvZGx4NTlieCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d8v55gXkiNj3y/giphy.gif" width="300" alt="GIF 3">
+ 
+### Passos para configurar o envio de e-mails com EmailJS:
+>
+> A biblioteca utilizada foi EmailJS, permite até 200 envio de emails de froma gratuita
+> 
+ 1. Crie uma conta no EmailJS
+ ````
+https://www.emailjs.com
+````
+ 2. Após criar a conta, vá para o painel de controle e configure um novo serviço de e-mail (como Gmail ou Outlook).
+ 3. Crie um novo template de e-mail
+    - Com placeholders para os dados que você deseja enviar.
+      ````
+      USAR TEMPLATE DO ARQUIVO
+       src/
+         ├── EmailJs/TemplateEmail.html         # Conteudos de texto   
+
+       chaves obrigatorias:
+        Nome: {{name}}
+        E-mail: {{email}}
+        Mensagem: {{message}}
+      ````
+> :warning:  Caso modifique o template verificar se as chaves obrigatorias estão sendo usadas.
+
+4. Obtenha suas credenciais:
+   -No painel do EmailJS, vá para "Integration" e copie sua chave de User ID, Service ID e Template ID. 
+    Você usará essas informações no arquivo:
+   ````
+    src/
+         ├── EmailJs/CredenciaisEmailJs.js    
+   ````
+
+
+   
+---
+
 
 ## **🔌Publicação na HostGator**
 <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTZwZWhuZTlubGYwOTUxbDF2emN4dnA1eDllNTd5MHRsaHc3MjJjOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KAG54qcias64jAW1mb/giphy.gif" width="200" alt="GIF 3">
