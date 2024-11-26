@@ -3,14 +3,16 @@ import image_faq from '../../assets/FAQs-rafiki.png';
 import triangulo from '../../assets/abstratos/triangulos-branco-azul-pequenos.png';
 import React from "react";
 
+import { titleMVV, missao, valores, visao} from '../../Dados/SobreNos';
+
 const MissionVisionValues = () => {
   return (
     <div className='sobre-nos gradient-blue my-5' data-aos="fade-righ">
        <div className=" container py-5 ">
       <div className="text-center mb-5">
-        <h2 className="fw-bold text-primary">Nossa Empresa</h2>
+        <h2 className="fw-bold text-primary">{titleMVV}</h2>
         <p className="">
-          Conheça nossa missão, visão e valores que guiam nossas ações.
+
         </p>
       </div>
 
@@ -24,8 +26,7 @@ const MissionVisionValues = () => {
               </div>
               <h5 className="card-title fw-bold">Missão</h5>
               <p className="card-text text-muted">
-                Fornecer soluções inovadoras que impactem positivamente a vida
-                das pessoas e promovam um futuro sustentável.
+               {missao}
               </p>
             </div>
           </div>
@@ -40,8 +41,7 @@ const MissionVisionValues = () => {
               </div>
               <h5 className="card-title fw-bold">Visão</h5>
               <p className="card-text text-muted">
-                Ser referência no mercado global, reconhecida por nossa
-                excelência e impacto positivo no mundo.
+               {visao}
               </p>
             </div>
           </div>
@@ -56,8 +56,7 @@ const MissionVisionValues = () => {
               </div>
               <h5 className="card-title fw-bold">Valores</h5>
               <p className="card-text text-muted">
-                Ética, transparência, inovação e compromisso com a sociedade e o
-                meio ambiente.
+              {valores}
               </p>
             </div>
           </div>

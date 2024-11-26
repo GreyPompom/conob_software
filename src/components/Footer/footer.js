@@ -29,7 +29,7 @@ function footer() {
           <h5>Suporte</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="/perguntas-frequentes" class="nav-link p-0 text-white">Perguntas frequentes</a></li>
-            <li class="nav-item mb-2"><a href="/politica#termos-servico" class="nav-link p-0 text-white">Termos de Serviço</a></li>
+            <li class="nav-item mb-2"><a href="/politica#termos-servico" class="nav-link p-0 text-white">Termos de serviço</a></li>
             <li class="nav-item mb-2"><a href="/politica#politica-privacidade" class="nav-link p-0 text-white">Politica de privacidade</a></li>
           </ul>
         </div>

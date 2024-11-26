@@ -7,7 +7,6 @@
 .box-contact-us,.box-frequently-questions {
     position: relative;
     overflow: hidden; 
-    min-height: 80vh;
     margin-top:5%
 }
 .box-contact-us h1, .box-frequently-questions h1 {

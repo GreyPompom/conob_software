@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import emailjs from 'emailjs-com';
 import './Contact.css';
 
-function ContactUs() {
+import { serviceID, templateID, userID } from '../../emailjs/CredenciaisEmailJs';
 
+function ContactUs() {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
     const [feedback, setFeedback] = useState('');
 
@@ -16,7 +17,30 @@ function ContactUs() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+        
+
+        emailjs
+            .send(
+                serviceID,
+                templateID,
+                {
+                    name: formData.name,
+                    email: formData.email,
+                    message: formData.message,
+                },
+                userID
+            )
+            .then(
+                (response) => {
+                    setFeedback('E-mail enviado com sucesso! Obrigado por entrar em contato.');
+                    setFormData({ name: '', email: '', message: '' });
+                },
+                (error) => {
+                    setFeedback('Ocorreu um erro ao enviar o e-mail. Tente novamente mais tarde.');
+                }
+            );
     };
+
     return (
         <div className="contact-us container-fluid bg-dark text-white py-4 rounded-top">
             <div className="container">
@@ -24,9 +48,10 @@ function ContactUs() {
                 <div className="row px-2 px-sm-5 justify-content-center">
                     {/* Contact Info */}
                     <div className="col-md-5 mb-4 text-start p-4">
-                        <h3 className='mb-2 text-white'>Com um clique</h3>
-                        <p class="text-white">
-                            Tem interesse em saber mais sobre nossas soluções ou deseja discutir um projeto específico? Nossa equipe está pronta para ajudar! Entre em contato conosco preenchendo o formulário.
+                        <h3 className="mb-2 text-white">Com um clique</h3>
+                        <p className="text-white">
+                            Tem interesse em saber mais sobre nossas soluções ou deseja discutir um projeto específico? <br /> <br />
+                            Nossa equipe está pronta para ajudar! Entre em contato conosco preenchendo o formulário.
                         </p>
                         <div className="adress mb-4 border-bottom">
                             <div className="d-flex align-items-center mb-3">
@@ -43,9 +68,9 @@ function ContactUs() {
                             </div>
                             <div className="d-flex align-items-center mb-3">
                                 <i className="bi bi-instagram me-3 fs-4 text-primary"></i>
-                                <span><a href='https://www.instagram.com/conob_software'>
-                                    conob_software
-                                </a> </span>
+                                <span>
+                                    <a href="https://www.instagram.com/conob_software">conob_software</a>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -57,23 +82,47 @@ function ContactUs() {
                             <form onSubmit={handleSubmit}>
                                 <div className="mb-1">
                                     <label htmlFor="name" className="form-label"></label>
-                                    <input type="text" className="form-control p-2 shadow border-0" id="name" placeholder="Nome" value={formData.name} onChange={handleChange} />
+                                    <input
+                                        type="text"
+                                        className="form-control p-2 shadow border-0"
+                                        id="name"
+                                        placeholder="Nome"
+                                        value={formData.name}
+                                        onChange={handleChange}
+                                    />
                                 </div>
                                 <div className="mb-1">
                                     <label htmlFor="email" className="form-label"></label>
-                                    <input type="email" className="form-control p-2 shadow border-0" id="email" placeholder="Seu e-mail" value={formData.email} onChange={handleChange} />
+                                    <input
+                                        type="email"
+                                        className="form-control p-2 shadow border-0"
+                                        id="email"
+                                        placeholder="Seu e-mail"
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                    />
                                 </div>
                                 <div className="mb-1">
                                     <label htmlFor="message" className="form-label"></label>
-                                    <textarea className="form-control p-2 shadow border-0" id="message" rows="4" placeholder="Mensagem" value={formData.message} onChange={handleChange} ></textarea>
+                                    <textarea
+                                        className="form-control p-2 shadow border-0"
+                                        id="message"
+                                        rows="4"
+                                        placeholder="Mensagem"
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                    ></textarea>
                                 </div>
                                 <small className="form-text text-muted mt-5">
-                                    Ao enviar a mensagem você concorda com <a href='/politica'>nossa política de privacidade</a> .
+                                    Ao enviar a mensagem você concorda com <a href='/politica' className='text-primary'>nossa política de privacidade</a> .
                                 </small>
                                 <button type="submit" className="btn btn-primary mt-3">Enviar</button>
                             </form>
-                            {feedback && <div className="mt-3 alert alert-info">{feedback}</div>}
-
+                            {feedback && (
+                                <div className="mt-3 alert alert-info text-center">
+                                    {feedback}
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>

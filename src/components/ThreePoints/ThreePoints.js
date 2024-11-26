@@ -8,6 +8,7 @@ import imagem_lampada from '../../assets/abstratos/lampada_engrenagem.png';
 import imagem_ondinha from '../../assets/abstratos/ondinha.png';
 import imagem_conob_web from '../../assets/abstratos/conob_web.png';
 import 'aos/dist/aos.css';
+import points, { title, subtitle } from '../../Dados/ThereePoints';
 
 const PointCard = ({ number, title, description }) => (
     <div className="col-lg-3 position-relative py-3 py-md-5 "data-aos="zoom-in-up">
@@ -15,11 +16,7 @@ const PointCard = ({ number, title, description }) => (
         <div className="box-blue" >
             <h2 className="fw-semibold mt-3">{title}</h2>
             <p className='text-light'>{description}</p>
-            <div className="botao-contact d-grid gap-2 d-md-flex justify-content-center">
-                <a className="btn btn-primary rounded-pill" href="/entre-contato" role="button">
-                    Entre em contato <i className="bi bi-arrow-right-short"></i>
-                </a>
-            </div>
+           
         </div>
     </div>
 );
@@ -42,24 +39,7 @@ function ThreePoints() {
         trackMouse: true
     });
 
-    const points = [
-        {
-            number: "01",
-            title: "Atendimento",
-            description: "Na Conob, cada cliente é único. Valorizamos suas necessidades e oferecemos soluções sob medida para alcançar os melhores resultados."
-        },
-        {
-            number: "02",
-            title: "Customização",
-            description: "Nossos softwares são adaptados para atender às necessidades específicas de cada cliente, garantindo que cada projeto seja único."
-        },
-        {
-            number: "03",
-            title: "Inovação",
-            description: "Estamos sempre evoluindo nossas ferramentas e tecnologias para oferecer soluções cada vez mais modernas e eficientes."
-        }
-    ];
-
+   
     return (
         <div className="container marketing">
              <div class="position-absolute start-0 p-3 ">
@@ -67,9 +47,9 @@ function ThreePoints() {
             </div>
             <div className="text-center text-secondary">
                 <div className="container py-3">
-                    <h1 className="sis text-primary">Por que a trabalhar com a Conob</h1>
+                    <h1 className="sis text-primary">{title}</h1>
                     <p className="col-lg-12 mx-auto p-2 p-lg-0 lead ">
-                        Na Conob, cada projeto é desenvolvido com foco no cliente. Oferecemos um atendimento especializado que respeita as necessidades únicas de cada parceiro, criando soluções sob medida para garantir resultados eficientes.
+                       {subtitle}
                     </p>
                 </div>
             </div>

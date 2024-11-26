@@ -4,6 +4,8 @@ import imageSobre from '../../assets/logo/logo_conob_zoom.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import { titleBox, subtitleBox } from '../../Dados/SobreNos';
+
 
 const animateValue = (start, end, duration, setValue) => {
     const startTime = performance.now();
@@ -46,10 +48,10 @@ function SobreNos() {
                 <div className="row align-items-center mb-5 0">
                     <div className="col-md-6">
                         <h1 className="partner-title text-primary">
-                            Seu parceiro confiável para todos serviços
+                            {titleBox}
                         </h1>
                         <p className="partner-subtitle mt-3">
-                            Conob está no mercado desde 2010, entregando serviço de qualidade e confiança para nossos clientes. Nossa equipe é formada por profissionais altamente qualificados e comprometidos com a excelência.
+                           {subtitleBox}
                         </p>
                     </div>
 

@@ -4,37 +4,20 @@ import './TimeLine.css';
 import defaultImage from '../../assets/default-image.png'; // Substitua pelo caminho real da imagem
 import logo from '../../assets/logo/LOGO - CONOB_Prancheta_zoom-800.png';
 
+import { timelineData } from '../../Dados/SobreNos';
+
+
 const Timeline = () => {
   const [lineHeight, setLineHeight] = useState(0);
 
-  // Dados da timeline, substitua os caminhos das imagens conforme necessário
-  const timelineData = [
-    {
-      year: "2010",
-      description:
-        "Lorem ipsum interdum dolor libero enim leo bibendum fringilla ultricies ut, nostra convallis ipsum quisque sed",
-      imgSrc: require('../../assets/default-image.png'), // substitua pelos caminhos reais
-    },
-    {
-      year: "2015",
-      description:
-        "Lorem ipsum interdum dolor libero enim leo bibendum fringilla ultricies ut, nostra convallis ipsum quisque sed",
-      imgSrc: require('../../assets/default-image.png'),
-    },
-    {
-      year: "Present",
-      description:
-        "Lorem ipsum interdum dolor libero enim leo bibendum fringilla ultricies ut, nostra convallis ipsum quisque sed",
-      imgSrc: require('../../assets/default-image.png')
-    },
-  ];
+  
 
   // Função para controlar a animação da linha conforme o scroll
   const handleScroll = () => {
     const maxHeight = document.documentElement.scrollHeight - window.innerHeight;
     const scrollTop = window.scrollY;
     const percentageScrolled = (scrollTop / maxHeight) * 100;
-    setLineHeight(Math.min(percentageScrolled, 100));
+    setLineHeight(Math.min(percentageScrolled+20, 100));
   };
 
   useEffect(() => {

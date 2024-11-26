@@ -1,0 +1,19 @@
+Passos para configurar o envio de e-mails com EmailJS:
+
+-Crie uma conta no EmailJS:
+    Vá para EmailJS e crie uma conta.
+
+-Após criar a conta, vá para o painel de controle e configure um novo serviço de e-mail (como Gmail ou Outlook).
+
+-Crie um novo template de e-mail, com placeholders para os dados que você deseja enviar. 
+    USAR TEMPLATE DO ARQUIVO 'TemplateEmail.html'
+        chaves obrigatorias:
+        Nome: {{name}}
+        E-mail: {{email}}
+        Mensagem: {{message}}
+
+
+-Obtenha suas credenciais:
+    No painel do EmailJS, vá para "Integration" e copie sua chave de User ID, Service ID e Template ID. 
+    Você usará essas informações no arquivo 'CredenciaisEmailJs.js'
+
