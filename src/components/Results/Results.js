@@ -49,7 +49,7 @@ const ResultsSection = () => {
 
                     {/* Texto e Estatísticas */}
                     <div className="col-md-8 text-start">
-                        <h1 className="title mb-4  text-primary ">Resultados que geram Confiança</h1>
+                        <h1 className="title mb-4  text-lithg">Resultados que geram Confiança</h1>
                         <p className="pos-title mb-5 text-white">
                         Desenvolvemos soluções robustas e seguras que fortaleceram a confiança de nossos clientes, impulsionando a eficiência operacional e a satisfação com resultados consistentes e de alta qualidade.
                         </p>
