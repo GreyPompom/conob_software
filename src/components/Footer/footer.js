@@ -1,13 +1,15 @@
-import logo from '../../assets/logo/logo_conob_zoom.png';
+import logo from '../../assets/logo/LOGO - CONOB_Prancheta_zoom-800.png';
 import './footer.css';
 function footer() {
   return (
       <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5  border-top bg-dark text-white text-start">
         <div class="col mb-3">
         <a className="navbar-brand " href="#">
-            <img src={logo} alt="Logo" className="logo-navbar" loading='lazy'/>
+            <img src={logo} alt="Logo" className="logo-navbar" loading='lazy' width={200}/>
           </a>
-          <p class="text-body-secondary">&copy; 2024</p>
+          <p class="text-white">&copy; 2024</p>
+          <p class="text-white"><a href="https://github.com/GreyPompom">
+          <i class="bi bi-code-slash "></i> Made by Hemelink</a></p>
         </div>
 
         <div class="col mb-3">
