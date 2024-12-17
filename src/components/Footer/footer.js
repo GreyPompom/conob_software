@@ -7,7 +7,7 @@ function footer() {
         <a className="navbar-brand " href="#">
             <img src={logo} alt="Logo" className="logo-navbar" loading='lazy' width={200}/>
           </a>
-          <p class="text-white">&copy; 2024</p>
+          <p class="text-white">&copy; 2015</p>
           <p class="text-white"><a href="https://github.com/GreyPompom">
           <i class="bi bi-code-slash "></i> Made by Hemelink</a></p>
         </div>

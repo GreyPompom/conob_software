@@ -60,7 +60,7 @@ function ContactUs() {
                             </div>
                             <div className="d-flex align-items-center mb-3">
                                 <i className="bi bi-telephone-fill me-3 fs-4 text-primary"></i>
-                                <span>+55 48 9 91810384</span>
+                                <span>+55 (48) 3181-0384 / +55 (11) 3136-0525</span>
                             </div>
                             <div className="d-flex align-items-center mb-3">
                                 <i className="bi bi-envelope-fill me-3 fs-4 text-primary"></i>

@@ -7,17 +7,17 @@ const cardsData = [
     {
         icon: 'bi-mortarboard',
         title: 'Equipe de Desenvolvimento',
-        text: 'Contamos com uma equipe de programadores experientes e qualificados, prontos para enfrentar qualquer desafio que apareça.',
+        text: 'Contamos com uma equipe de programadores experientes e qualificados, prontos para criar soluções que atendam nossos clientes.',
     },
     {
         icon: 'bi-headset',
         title: 'Suporte',
-        text: 'Contamos com uma equipe de suporte dedicada e comprometida em oferecer assistência excepcional aos nossos clientes.',
+        text: 'Nossa equipe de suporte é ágil e eficiente, garantindo que os problemas e dúvidas dos clientes sejam resolvidos com profissionalismo e agilidade.',
     },
     {
         icon: 'bi-hdd-stack',
-        title: 'BLA BLA BLA BLA BALALA',
-        text: 'Our membership management software provides full automation of membership renewals and payments.',
+        title: 'Contato',
+        text: 'de segunda a sexta das 08:00 ao 12:00 e das 13:30 as 18:00.',
     },
     {
         isImage: true,

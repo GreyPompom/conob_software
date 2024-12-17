@@ -29,9 +29,6 @@ const Timeline = () => {
     <div className="container my-5 p-5 " data-aos="zoom-in-up">
       <h1 className="text-center text-primary d-grid justify-content-center mb-5">
         Conheça a história 
-        <img src={logo} width={150} loading='lazy' className='mx-auto mt-2'>
-      </img>
-      
       </h1>
       <div className="row justify-content-center position-relative">
         {/* Linha vertical animada */}

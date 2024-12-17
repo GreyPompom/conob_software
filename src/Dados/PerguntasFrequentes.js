@@ -1,25 +1,29 @@
 const title = 'Perguntas frequentes'
-const subtitle = ' FAQ’s (Frequently Asked Questions) bem escritas podem entregar valor. Se você conhece seu público, sabe as perguntas frequentes - utilize aquelas que mais geram mais contato com o suporte. Não invente perguntas.'
+const subtitle = ' FAQ’s, Encontre aqui algumas respostas as principais perguntas sobre a Conob.'
 const questions = [
     {
-        title: "Why is the moon sometimes out during the day?",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti."
+        title: "Só tem software para área de transporte e destinação de resíduos?",
+        content: "Não, possuimos soluções para diversos segmentos, contacte-nos."
     },
     {
-        title: "Why is the sky blue?",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti."
+        title: "Minha empresa trabalha com hórario diferenciado, vou pagar a mais por isso?",
+        content: "Não cobramos taxas de sobre aviso, contudo, fora do horário comercial fornecemos atendimento no funcionamento da operação, demandas normais sãro registradas e tratadas posteriormente."
     },
     {
-        title: "Will we ever discover aliens?",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti."
+        title: "Vocês oferecem treinamento para minha equipe usar o software?",
+        content: "Sim, quando da contratação levantamos, customizamos e treinamos o time que irá utilizar o software."
+    },
+    {
+        title: "O software esta integrado com o MTR?",
+        content: "Sim, o software é integrado ao Mtr, contudo a forma é a mesma praticada pelo mercado, utilizando Api's públicas e disponíveis na unidade federativa."
     },
     {
         title: "How much does the Earth weigh?",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti."
     },
     {
-        title: "How do airplanes stay up?",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti."
+        title: "Tenho algum atendimento diferenciado em relação ao Mtr se eu for cliente Conob?",
+        content: "Não, deixamos claro desde a primeira apresentação que não hã privilégios no atendimento em relação ao Mtr, não respondemos ou encaminhamos questões referente a esse projeto."
     }
 ];
 
