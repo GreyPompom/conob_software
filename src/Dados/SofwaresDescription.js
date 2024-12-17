@@ -24,7 +24,6 @@ const conob = [
         idclass: 'conob-bi',
         home: true
     },
-
     {
         title: 'Compras',
         image: require('../assets/Systems/image-default-card.png'),
@@ -50,6 +49,18 @@ const conob = [
         system: 'Conob',
         idclass: 'conob-contrato',
         home: true
+    },
+    {
+        title: 'Construtora',
+        image: require('../assets/Systems/image-default-card.png'),
+        definitions: [
+            'Registro de obras e unidades.',
+            'Controle de vendas, negociação e financiamento prório.',
+            'Diário de Obra Mobile.'
+        ],
+        system: 'Conob',
+        idclass: 'conob-construtora',
+        home: false
     },
     {
         title: 'Estoque',
@@ -111,6 +122,18 @@ const conob = [
         ],
         system: 'Conob',
         idclass: 'conob-funil',
+        home: true
+    },
+    {
+        title: 'Imobiliária',
+        image: require('../assets/Systems/image-default-card.png'),
+        definitions: [
+            'Controle de vendas e locação.',
+            'Reserva on-line',
+            'Controle de limpeza e manutenção'
+        ],
+        system: 'Conob',
+        idclass: 'conob-gdh',
         home: true
     },
     {
