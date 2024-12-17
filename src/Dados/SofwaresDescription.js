@@ -185,6 +185,18 @@ const conob = [
         home: true
     },
     {
+        title: 'Patrimônio',
+        image: require('../assets/Systems/image-default-card.png'),
+        definitions: [
+            'Registro bens.',
+            'Controle de aquisição e manutenção.',
+            'Integração com financeiro.'
+        ],
+        system: 'Conob',
+        idclass: 'conob-patrimonio',
+        home: true
+    },
+    {
         title: 'Projetos',
         image: require('../assets/Systems/image-default-card.png'),
         definitions: [
