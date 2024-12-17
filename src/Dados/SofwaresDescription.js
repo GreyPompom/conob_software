@@ -121,7 +121,7 @@ const conob = [
             'Controle de faltas / férias / ....'
         ],
         system: 'Conob',
-        idclass: 'conob-ged',
+        idclass: 'conob-gdh',
         home: true
     },
     {
@@ -181,7 +181,7 @@ const conob = [
             'Controle de registros de ocorrência conformes e não conformes.'
         ],
         system: 'Conob',
-        idclass: 'conob-ged',
+        idclass: 'conob-sgi',
         home: true
     },
     {
@@ -193,7 +193,7 @@ const conob = [
             'Controle de previsão e investimento.'
         ],
         system: 'Conob',
-        idclass: 'conob-laboratorio',
+        idclass: 'conob-projeto',
         home: true
     },
     {
@@ -205,6 +205,18 @@ const conob = [
         ],
         system: 'Conob',
         idclass: 'conob-protocolo',
+        home: true
+    },
+    {
+        title: 'Transporte',
+        image: require('../assets/Systems/image-default-card.png'),
+        definitions: [
+            'Programação de coleta.',
+            'Geração de Mtr na coleta.',
+            'Controle de jornada do Motorista.'
+        ],
+        system: 'Conob',
+        idclass: 'conob-transporte',
         home: true
     }
 ];
