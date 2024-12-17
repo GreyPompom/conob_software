@@ -114,6 +114,17 @@ const conob = [
         home: true
     },
     {
+        title: 'GDH',
+        image: require('../assets/Systems/image-default-card.png'),
+        definitions: [
+            'Regristro de funcionário.',
+            'Controle de faltas / férias / ....'
+        ],
+        system: 'Conob',
+        idclass: 'conob-ged',
+        home: true
+    },
+    {
         title: 'GED',
         image: require('../assets/Systems/image-default-card.png'),
         definitions: [
