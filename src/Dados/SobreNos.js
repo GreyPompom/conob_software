@@ -35,7 +35,7 @@ const timelineData = [
         year: "2018",
         description:
             "Lançamento do software ERP-web para imobiliárias",
-        imgSrc: require('../assets/default-image.png'),
+        imgSrc: require('../assets/imobiliaria.png'),
     },
     {
         year: "2019",
@@ -64,7 +64,7 @@ const timelineData = [
     {
       year: "2024",
       description:
-        "Primeiras iterações de IA generativa",
+        "Aplicativo para atendimento Loja, Aplicativo para separação e coleta de estoque, primeiras iterações de IA generativa",
       imgSrc: require('../assets/ia.png'),
     },
   ];
