@@ -38,7 +38,7 @@ const NossosSoftwares = ({ sistemas }) => {
           {activeSystem && (
 
             <div class="content col-lg-12 d-flex flex-wrap-reverse p-4 text-start">
-              <div className=" col-12 col-lg-12">
+              <div className="">
                 <h2 className="">{activeSystem.title}</h2>
                 <p>
                   {activeSystem.definitions.map((definition, idx) => (
@@ -50,9 +50,9 @@ const NossosSoftwares = ({ sistemas }) => {
                 </p>
                 <a href="entre-contato" className="btn btn-primary mt-3" target="_blank" >Solicite uma demonstração</a>
               </div>
-              {/* <div  className="col-12 col-lg-4 w-150 my-2">
+              <div  className=" w-150 my-2">
                 <img className="rounded" src={activeSystem.image} width={200} />
-                </div> */}
+                </div>
             </div>
           )}
         </div>

@@ -48,7 +48,7 @@ const conob = [
         ],
         system: 'Conob',
         idclass: 'conob-contrato',
-        home: true
+        home: false
     },
     {
         title: 'Construtora',
@@ -84,7 +84,7 @@ const conob = [
         ],
         system: 'Conob',
         idclass: 'conob-faturamento',
-        home: true
+        home: false
     },
     {
         title: 'Financeiro',
@@ -108,7 +108,7 @@ const conob = [
         ],
         system: 'Conob',
         idclass: 'conob-fullcommerce',
-        home: true
+        home: false
     },
     {
         title: 'Funil de Vendas',
@@ -122,7 +122,7 @@ const conob = [
         ],
         system: 'Conob',
         idclass: 'conob-funil',
-        home: true
+        home: false
     },
     {
         title: 'Imobiliária',
@@ -133,8 +133,8 @@ const conob = [
             'Controle de limpeza e manutenção'
         ],
         system: 'Conob',
-        idclass: 'conob-gdh',
-        home: true
+        idclass: 'conob-imobiliaria',
+        home: false
     },
     {
         title: 'GDH',
@@ -157,7 +157,7 @@ const conob = [
         ],
         system: 'Conob',
         idclass: 'conob-ged',
-        home: true
+        home: false
     },
     {
         title: 'Ingresso',
@@ -171,7 +171,7 @@ const conob = [
         ],
         system: 'Conob',
         idclass: 'conob-ingresso',
-        home: true
+        home: false
     },
     {
         title: 'Laboratório',
@@ -193,7 +193,7 @@ const conob = [
         ],
         system: 'Conob',
         idclass: 'conob-mailling',
-        home: true
+        home: false
     },
     {
         title: 'SGI',
@@ -205,7 +205,7 @@ const conob = [
         ],
         system: 'Conob',
         idclass: 'conob-sgi',
-        home: true
+        home: false
     },
     {
         title: 'Patrimônio',
@@ -217,7 +217,7 @@ const conob = [
         ],
         system: 'Conob',
         idclass: 'conob-patrimonio',
-        home: true
+        home: false
     },
     {
         title: 'Projetos',
@@ -229,7 +229,7 @@ const conob = [
         ],
         system: 'Conob',
         idclass: 'conob-projeto',
-        home: true
+        home: false
     },
     {
         title: 'Protocolo Eletrônico',
@@ -240,7 +240,7 @@ const conob = [
         ],
         system: 'Conob',
         idclass: 'conob-protocolo',
-        home: true
+        home: false
     },
     {
         title: 'Transporte',

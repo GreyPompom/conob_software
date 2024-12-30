@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './TimeLine.css';
 import defaultImage from '../../assets/default-image.png'; // Substitua pelo caminho real da imagem
@@ -6,18 +6,29 @@ import logo from '../../assets/logo/LOGO - CONOB_Prancheta_zoom-800.png';
 
 import { timelineData } from '../../Dados/SobreNos';
 
-
 const Timeline = () => {
   const [lineHeight, setLineHeight] = useState(0);
-
-  
+  const timelineRef = useRef(null); // Referência para a div da timeline
 
   // Função para controlar a animação da linha conforme o scroll
   const handleScroll = () => {
-    const maxHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollTop = window.scrollY;
-    const percentageScrolled = (scrollTop / maxHeight) * 100;
-    setLineHeight(Math.min(percentageScrolled+20, 100));
+    const timeline = timelineRef.current;
+
+    if (timeline) {
+      const timelineTop = timeline.getBoundingClientRect().top + window.scrollY;
+      const timelineHeight = timeline.offsetHeight;
+      const windowHeight = window.innerHeight;
+
+      const scrollTop = window.scrollY;
+      const maxScroll = timelineTop + timelineHeight - windowHeight;
+
+      const percentageScrolled = Math.min(
+        ((scrollTop - timelineTop) / (maxScroll - timelineTop)) * 100,
+        100
+      );
+
+      setLineHeight(Math.max(0, percentageScrolled));
+    }
   };
 
   useEffect(() => {
@@ -30,7 +41,7 @@ const Timeline = () => {
       <h1 className="text-center text-primary d-grid justify-content-center mb-5">
         Conheça a história 
       </h1>
-      <div className="row justify-content-center position-relative">
+      <div className="row justify-content-center position-relative" ref={timelineRef}>
         {/* Linha vertical animada */}
         <div className="timeline-line" style={{ height: `${lineHeight}%` }} ></div>
 

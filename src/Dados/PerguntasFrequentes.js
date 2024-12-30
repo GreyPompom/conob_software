@@ -18,10 +18,6 @@ const questions = [
         content: "Sim, o software é integrado ao Mtr, contudo a forma é a mesma praticada pelo mercado, utilizando Api's públicas e disponíveis na unidade federativa."
     },
     {
-        title: "How much does the Earth weigh?",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti."
-    },
-    {
         title: "Tenho algum atendimento diferenciado em relação ao Mtr se eu for cliente Conob?",
         content: "Não, deixamos claro desde a primeira apresentação que não hã privilégios no atendimento em relação ao Mtr, não respondemos ou encaminhamos questões referente a esse projeto."
     }

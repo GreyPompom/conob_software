@@ -35,7 +35,7 @@ const timelineData = [
         year: "2018",
         description:
             "Lançamento do software ERP-web para imobiliárias",
-        imgSrc: require('../assets/imobiliaria.png'),
+        imgSrc: require('../assets/default-image.png'),
     },
     {
         year: "2019",
